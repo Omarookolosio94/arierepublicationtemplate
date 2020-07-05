@@ -1,0 +1,286 @@
+/* Global Styles */
+:root {
+  /* light Theme */
+  --primaryBg: #f4f7f6;
+  --secondaryBg: #202121;
+  --lightColor: #fcfcfc;
+  --darkgreen: #42ab9e;
+  --lightGreen: #49c5b6;
+  --darkHover: #64686a;
+  --red: #d14836;
+  --purple: #6464e8;
+  --gray: #a6abab;
+  --gold: #ae9b4f;
+  --plainWhite: #fff;
+  --blue: #017eff;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+li {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+img {
+  border: none;
+}
+input[type='submit'],
+input[type='text'] {
+  -webkit-appearance: none;
+}
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+input[type='submit']:focus,
+button:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-light-pro.woff2') format('woff2'),
+    url('../apercu/apercu-light-pro.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-light-italic-pro.woff2') format('woff2'),
+    url('../apercu/apercu-light-italic-pro.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-regular-pro.woff2') format('woff2'),
+    url('../apercu/apercu-regular-pro.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-medium-pro.woff2') format('woff2'),
+    url('../apercu/apercu-medium-pro.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-bold-pro.woff2') format('woff2'),
+    url('./apercu/apercu-bold-pro.woff') format('woff');
+  font-weight: 600;
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'apercu';
+  src: url('../apercu/apercu-black-pro.woff2') format('woff2'),
+    url('../apercu/apercu-black-pro.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Main Styling */
+body {
+  margin: auto;
+  font-family: 'apercu', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--secondaryBg);
+  background: var(--primaryBg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--lightGreen);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--secondaryBg);
+  text-decoration: none;
+}
+strong {
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 25px;
+  font-weight: normal;
+  line-height: 170%;
+}
+h1,
+h2 {
+  line-height: normal;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 19px;
+}
+h4 {
+  font-size: 17px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+p,
+blockquote,
+.p {
+  margin-bottom: 25px;
+  line-height: 170%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+input,
+textarea,
+select,
+button {
+  font-family: 'apercu', sans-serif;
+  font-size: 16px;
+  color: var(--secondaryBg);
+}
+button {
+  background-color: transparent;
+  border: transparent;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 15px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.img-block {
+  display: block;
+}
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-x-thin {
+  font-weight: 100;
+}
+.text-thin {
+  font-weight: 300;
+}
+.text-bold {
+  font-weight: 500;
+}
+.text-x-bold {
+  font-weight: 800;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-strikethrough {
+  text-decoration: line-through;
+}
+.text-black {
+  color: var(--primaryBg);
+}
+a.text-black:hover {
+  color: var(--darkHover);
+}
+.text-color {
+  color: var(--secondaryBg);
+}
+.text-green {
+  color: var(--lightGreen);
+}
+.text-red {
+  color: var(--red);
+}
+.text-purple {
+  color: var(--purple);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-gold {
+  color: var(--gold);
+}
+.text-white {
+  color: var(--plainWhite);
+}
+.text-blue {
+  color: var(--blue);
+}
