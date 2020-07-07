@@ -1,0 +1,21 @@
+/* Badget */
+.badget {
+  padding: 5px 7px 3px 7px;
+  background-color: $darkgreen;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.link-1 {
+  display: inline-block;
+  color: $secondaryBg !important;
+  border-bottom: 1px solid rgba(32, 33, 33, 0.5);
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-color: #202121;
+  }
+}

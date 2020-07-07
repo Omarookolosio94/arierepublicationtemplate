@@ -1,0 +1,32 @@
+/* Button */
+.button {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  padding: 0 35px;
+  background-color: $lightGreen;
+  color: #fff;
+  line-height: 63px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  .button-large {
+    height: 70px;
+    line-height: 71px;
+  }
+
+  .span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $darkgreen;
+  }
+}

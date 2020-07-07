@@ -4,7 +4,7 @@
   "description": "UI/UX Design for Ariere Publication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w sass/ -o dist/css --recursive"
   },
   "keywords": [
     "UI/UX",
@@ -15,5 +15,8 @@
     "JS"
   ],
   "author": "Okolosio Oghenemaro, MatrixWeb",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ariere Publication</title>
     <link rel="stylesheet" href="./fa-light/light.min.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body class="ht-visible">
     <div class="wrapper">
@@ -124,6 +123,7 @@
                 <i class="fal fa-search"></i>
               </div>
 
+              <!-- Login Action -->
               <div class="item login">
                 <span>Are you a member?</span>
                 <strong
@@ -140,11 +140,59 @@
               </div>
             </div>
             <div class="logo-header">
-              <a href="/" aria-label="Awwwards">
-                Ariere Publication
+              <a href="index.html" aria-label="Awwwards">
+                <span>
+                  arierePub.
+                </span>
               </a>
             </div>
           </div>
+          <!-- End of Main header -->
+
+          <!-- Search Component -->
+
+          <div class="box-search" id="box-search">
+            <div class="box-left">
+              <div class="box-input">
+                <div class="item ico-search">
+                  <svg
+                    class="ico-svg"
+                    viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use
+                      xlink:href="/assets/images/sprite-icons.svg#search"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    ></use>
+                  </svg>
+                </div>
+
+                <input
+                  type="text"
+                  id="search-text"
+                  placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                  data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                  data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                  autocomplete="off"
+                  class="search-input js-search-input"
+                  value=""
+                />
+                <div class="search-info">
+                  <div class="row default active">
+                    <strong
+                      ><a href="/websites/" class="link-1"
+                        >SHOW FILTERS</a
+                      ></strong
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-right">
+              <div class="bt-close js-search-close"></div>
+            </div>
+          </div>
+          <!-- End of Search Component -->
         </header>
       </div>
     </div>
