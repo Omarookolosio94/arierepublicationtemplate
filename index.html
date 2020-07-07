@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication</title>
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="ht-visible">
+  <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li>
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Categories</a>
+            </li>
+            <li>
+              <a href="" class="nav-link" data-count="20">Publications</a>
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+        <header id="header">
+          <!-- Header Top with Social Links -->
+          <div class="header-top">
+            <div class="box-left">
+              <div class="item">
+                <span
+                  class="link-1 js-nav-main js-nav-lang"
+                  data-menu-id="menu-lang"
+                >
+                  ENGLISH
+                </span>
+              </div>
+            </div>
+            <div class="box-center">
+              <h1 class="slogan">
+               The Road To Becoming Your Own Publisher Begins Now 
+              </h1>
+            </div>
+            <div class="box-right">
+              <ul class="list-social item">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href=""
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href=""
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href=""
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Main Header  -->
+          <div class="header-main">
+            <div class="box-left">
+              <div class="item bt-menu js-nav-main" data-menu-id="menu-main" onclick="openSideNav()" >
+                <div class="ico-menu">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <span class="has-tablet">MENU</span>
+              </div>
+            </div>
+            <div class="box-right">
+              <div class="item bt-search" id="js-search-container" onclick="openSearch()">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <!-- Login Action -->
+              <div class="item login">
+                <span>Are you a member?</span>
+                <strong
+                  ><a class="text-black open_login" href="/login"
+                    >Register / log in</a
+                  ></strong
+                >
+              </div>
+
+              <div class="item has-tablet" id="bt-submit">
+                <a href="/submit/" class="button button-large">
+                  <span>SUBMIT YOUR PUBLICATIONS!</span>
+                </a>
+              </div>
+            </div>
+            <div class="logo-header">
+              <a href="index.html" aria-label="Awwwards">
+                <span>
+                  arierePub.
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- End of Main header -->
+
+          <!-- Search Component -->
+
+          <div class="box-search" id="box-search">
+            <div class="box-left">
+              <div class="box-input">
+                <div class="item ico-search">
+                  <i class="fal fa-search"></i>
+                </div>
+
+                <input
+                  type="text"
+                  id="search-text"
+                  placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                  data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                  data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                  autocomplete="off"
+                  class="search-input js-search-input"
+                  value=""
+                />
+                <div class="search-info">
+                  <div class="row default active">
+                    <strong
+                      ><a href="/websites/" class="link-1"
+                        >SHOW FILTERS</a
+                      ></strong
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-right" onclick="closeSearch()">
+              <div class="bt-close js-search-close"></div>
+            </div>
+          </div>
+          <!-- End of Search Component -->
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
