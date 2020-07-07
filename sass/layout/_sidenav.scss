@@ -5,21 +5,19 @@
   width: 320px;
   height: 100vh;
   background-color: $primaryBg;
-  border: 1px solid red;
   transform: translateX(-320px);
-}
 
-.side-nav .header {
-  height: 70px;
-  padding: 0 30px;
-  line-height: 70px;
-  font-weight: normal;
-  border-bottom: 1px solid $borderBtm;
-  overflow: hidden;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
+  .header {
+    height: 70px;
+    padding: 0 30px;
+    line-height: 70px;
+    font-weight: normal;
+    border-bottom: 1px solid $borderBtm;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
 }
-
 .close-btn {
   display: flex;
   width: 100%;
@@ -27,15 +25,15 @@
   justify-content: flex-end;
   cursor: pointer;
   text-transform: uppercase;
-}
 
-.close-btn span {
-  font-weight: bold;
-}
+  span {
+    font-weight: bold;
+  }
 
-.close-btn i {
-  font-size: 1.5rem;
-  margin-left: 20px;
+  i {
+    font-size: 24px;
+    margin-left: 20px;
+  }
 }
 
 /* Link Items */

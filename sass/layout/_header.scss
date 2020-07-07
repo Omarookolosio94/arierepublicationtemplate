@@ -167,6 +167,13 @@ header .header-main {
   cursor: pointer;
 }
 
+#header .bt-search i {
+  font-weight: 600;
+}
+#header .bt-search {
+  cursor: pointer;
+}
+
 #header .button {
   padding: 0 30px;
 }
@@ -322,6 +329,50 @@ header .header-main {
 
 .box-search .bt-close:after {
   transform: rotate(-45deg);
+}
+
+@include mediaMd {
+  .has-tablet,
+  .box-search .search-info,
+  .box-search .ico-search,
+  .box-search .box-filters {
+    display: none;
+  }
+  .bt-menu {
+    width: 65px;
+    min-width: inherit;
+  }
+
+  #header .bt-search i {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+  }
+
+  .box-search {
+    left: 0;
+    width: 100%;
+  }
+
+  .box-search .bt-close {
+    background-color: transparent;
+  }
+
+  .box-search .bt-close:before,
+  .box-search .bt-close:after {
+    background-color: $secondaryBg;
+  }
+}
+
+@include mediaLg {
+  .has-desktop,
+  #header .login,
+  #header .logged .name,
+  body.ht-visible #header .header-top,
+  .logo-header .title {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1570px) {
