@@ -1,0 +1,159 @@
+.side-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: $primaryBg;
+  border: 1px solid red;
+  transform: translateX(-320px);
+}
+
+.side-nav .header {
+  height: 70px;
+  padding: 0 30px;
+  line-height: 70px;
+  font-weight: normal;
+  border-bottom: 1px solid $borderBtm;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.close-btn span {
+  font-weight: bold;
+}
+
+.close-btn i {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+/* Link Items */
+.side-nav .nav-item,
+.side-nav a.nav-link {
+  position: relative;
+  display: block;
+  padding: 24px 36px;
+  font-size: 17px;
+  font-weight: bold;
+  color: $secondaryBg;
+  cursor: pointer;
+  background: $primaryBg;
+  border-bottom: 1px solid $borderBtm;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.side-nav .nav-item:hover,
+.side-nav a.nav-link:hover {
+  background-color: $lightColor;
+  transition: background 0.3s ease-in-out;
+}
+
+.side-nav li [data-count]:not([data-count='']):after {
+  content: attr(data-count);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  background-color: $darkgreen;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.side-nav .badget {
+  margin-left: 5px;
+  color: $plainWhite;
+}
+
+/* Box Bottom */
+.side-nav .box-bottom {
+  padding: 30px 25px 30px 36px;
+  width: 100%;
+}
+
+.side-nav .box-bottom .box-version {
+  line-height: 30px;
+  font-size: 16px;
+  color: $gray;
+  font-weight: 400;
+}
+
+/* check Toggle */
+.side-nav .box-bottom .box-version .input-check-toggle {
+  top: 4px;
+  float: right;
+}
+
+.input-check-toggle.check-small {
+  width: 46px;
+  height: 25px;
+}
+
+.input-check-toggle {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-check-toggle input {
+  display: none;
+}
+
+.input-check-toggle label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $toggleBg;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-check-toggle.check-small .ball {
+  width: 23px;
+  height: 23px;
+  transform: translateX(22px);
+}
+.input-check-toggle .ball {
+  position: relative;
+  top: 1px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: $plainWhite;
+  border-radius: 50%;
+  transform: translateX(41px);
+  transition: all 0.3s ease;
+}
+
+.input-check-toggle input:checked + label .ball {
+  transform: translateX(1px);
+}
+
+.input-check-toggle input:checked + label {
+  background: $lightGreen;
+}

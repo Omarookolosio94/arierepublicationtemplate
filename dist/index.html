@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body class="ht-visible">
-    <div class="wrapper">
-      <div class="side-nav">
+  <div class="wrapper">
+      <div class="side-nav" id="sideNav">
         <div class="top">
           <div class="header">
-            <div class="close-btn">
+            <div class="close-btn" onclick="closeSideNav()">
               <span>Close</span>
               <i class="fal fa-times"></i>
             </div>
@@ -54,7 +54,6 @@
           </div>
         </div>
       </div>
-      <div class="main">
         <header id="header">
           <!-- Header Top with Social Links -->
           <div class="header-top">
@@ -109,7 +108,7 @@
           <!--Main Header  -->
           <div class="header-main">
             <div class="box-left">
-              <div class="item bt-menu js-nav-main" data-menu-id="menu-main">
+              <div class="item bt-menu js-nav-main" data-menu-id="menu-main" onclick="openSideNav()" >
                 <div class="ico-menu">
                   <div class="bar"></div>
                   <div class="bar"></div>
@@ -155,16 +154,7 @@
             <div class="box-left">
               <div class="box-input">
                 <div class="item ico-search">
-                  <svg
-                    class="ico-svg"
-                    viewBox="0 0 14 14"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <use
-                      xlink:href="/assets/images/sprite-icons.svg#search"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    ></use>
-                  </svg>
+                  <i class="fal fa-search"></i>
                 </div>
 
                 <input
@@ -193,8 +183,8 @@
             </div>
           </div>
           <!-- End of Search Component -->
-        </header>
       </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
