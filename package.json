@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "UI/UX Design for Ariere Publication",
   "main": "index.js",
+  "homepage": "https://omarookolosio94.github.io/arierepublicationtemplate",
   "scripts": {
     "sass": "node-sass -w sass/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
