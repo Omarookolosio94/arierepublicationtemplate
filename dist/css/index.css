@@ -301,6 +301,21 @@ a.text-black:hover {
   .link-1:hover {
     border-color: #202121; }
 
+.ribbon {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 90px;
+  height: 151px;
+  z-index: 5;
+  transform: translateY(-50%); }
+  .ribbon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
 .side-nav {
   position: absolute;
   top: 0;
@@ -811,6 +826,17 @@ body.ht-visible .wrapper {
   opacity: 1;
   visibility: visible; }
 
+.lazy-loaded {
+  opacity: 1; }
+
+.has-mobile,
+.hidden {
+  display: none; }
+
+@media screen and (max-width: 1024px) {
+  body.ht-visible #header {
+    height: 70px; } }
+
 #content {
   display: flex;
   flex-direction: column;
@@ -819,20 +845,57 @@ body.ht-visible .wrapper {
   min-height: calc(100vh - 418px);
   transition: padding 0.6s ease-in-out;
   z-index: 0; }
+  #content:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 400;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s; }
 
-#content:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 400;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s; }
+.box-site-head {
+  position: relative;
+  z-index: 2; }
+  .box-site-head .box-bg {
+    position: relative;
+    overflow: hidden; }
+  .box-site-head .box-bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 0; }
+  .box-site-head .box-bg a {
+    position: relative;
+    display: block;
+    height: 100%; }
+  .box-site-head .box-bg img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    z-index: 1; }
+  .box-site-head .box-photo {
+    position: relative; }
 
-.p1 {
-  padding: 5rem 2rem; }
+@media screen and (max-width: 1024px) {
+  #content {
+    overflow: hidden; }
+  .box-site-head .box-bg {
+    position: relative;
+    height: 500px;
+    overflow: hidden; }
+  .box-site-head .box-bg img {
+    height: 100%;
+    object-fit: cover; } }
