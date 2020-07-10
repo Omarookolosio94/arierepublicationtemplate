@@ -363,6 +363,10 @@ header .header-main {
   .box-search .bt-close:after {
     background-color: $secondaryBg;
   }
+
+  .box-content .inner {
+    display: block;
+  }
 }
 
 @include mediaLg {
