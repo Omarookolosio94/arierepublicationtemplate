@@ -21,6 +21,12 @@
     visibility: hidden;
     transition: all 0.5s;
   }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
 
 .box-site-head {
@@ -177,6 +183,11 @@
   border-color: #fcfcfc;
 }
 
+.box-site-head .bt-default:not(.liked):not(.green-fill):not(.active):hover {
+  color: #49c5b6;
+  border-color: #49c5b6;
+}
+
 .box-notesite {
   display: inline-block;
 }
@@ -248,6 +259,13 @@
   .box-bl {
     display: none !important;
   }
+}
+
+//Open Modal for Each Liked user Profile
+.js-judge-note:hover .tooltip-user {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 @include mediaLg {

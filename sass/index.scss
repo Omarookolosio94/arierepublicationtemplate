@@ -6,6 +6,7 @@
 //Components
 @import 'components/button';
 @import 'components/others';
+@import 'components/grid';
 
 //Layouts Imports
 @import 'layout/sidenav';
@@ -14,3 +15,4 @@
 //Pages
 @import 'pages/home';
 @import 'layout/section';
+@import 'pages/query';
