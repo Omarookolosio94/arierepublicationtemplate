@@ -201,6 +201,37 @@
   }
 }
 
+//Open Modal for Each Liked user Profile
+.js-judge-note:hover .tooltip-user {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@include mediaLg {
+  #content {
+    overflow: hidden;
+  }
+
+  .box-site-head {
+    .box-bg {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+    .box-bg img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .box-breadcrumb .box-right,
+    .box-content .box-br,
+    .box-content .box-bl {
+      display: none;
+    }
+  }
+}
+
 @include mediaMd {
   .box-site-head .box-photo img {
     display: block;
@@ -258,36 +289,5 @@
   .box-br,
   .box-bl {
     display: none !important;
-  }
-}
-
-//Open Modal for Each Liked user Profile
-.js-judge-note:hover .tooltip-user {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, 0);
-}
-
-@include mediaLg {
-  #content {
-    overflow: hidden;
-  }
-
-  .box-site-head {
-    .box-bg {
-      position: relative;
-      height: 500px;
-      overflow: hidden;
-    }
-    .box-bg img {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .box-breadcrumb .box-right,
-    .box-content .box-br,
-    .box-content .box-bl {
-      display: none;
-    }
   }
 }

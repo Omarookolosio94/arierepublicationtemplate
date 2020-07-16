@@ -331,6 +331,22 @@ header .header-main {
   transform: rotate(-45deg);
 }
 
+@media (max-width: 1570px) {
+  #header .login span {
+    display: none;
+  }
+}
+
+@include mediaLg {
+  .has-desktop,
+  #header .login,
+  #header .logged .name,
+  body.ht-visible #header .header-top,
+  .logo-header .title {
+    display: none !important;
+  }
+}
+
 @include mediaMd {
   .has-tablet,
   .box-search .search-info,
@@ -366,21 +382,5 @@ header .header-main {
 
   .box-content .inner {
     display: block;
-  }
-}
-
-@include mediaLg {
-  .has-desktop,
-  #header .login,
-  #header .logged .name,
-  body.ht-visible #header .header-top,
-  .logo-header .title {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1570px) {
-  #header .login span {
-    display: none;
   }
 }

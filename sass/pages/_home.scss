@@ -71,14 +71,14 @@ body.ht-visible .wrapper {
   display: none;
 }
 
-@include mediaMd {
-  .has-mobile {
-    display: block;
-  }
-}
-
 @include mediaLg {
   body.ht-visible #header {
     height: 70px;
+  }
+}
+
+@include mediaMd {
+  .has-mobile {
+    display: block;
   }
 }
