@@ -4,6 +4,7 @@ var boxSearch = document.getElementById('box-search');
 var headerTop = document.querySelector('.header-top');
 var dropDownItem = document.querySelector('.option-active');
 var dropDown = document.querySelector('.box-dropdown');
+var selectLang = document.querySelector('.select');
 var body = document.body;
 var sticky = headerTop.offsetTop;
 
@@ -33,6 +34,10 @@ closeDropDown = () => {
   dropDown.classList.remove('open');
 };
 
+closeSelectLang = () => {
+  selectLang.parentNode.classList.remove('open');
+};
+
 window.onscroll = () => myFunction();
 
 myFunction = () => {
@@ -55,6 +60,21 @@ document.addEventListener('click', (evt) => {
   } while (targetElement);
   {
     closeDropDown();
+  }
+});
+
+document.addEventListener('click', (evt) => {
+  let targetElement = evt.target; // clicked element
+
+  do {
+    if (targetElement == selectLang) {
+      return;
+    }
+    // Go up the DOM
+    targetElement = targetElement.parentNode;
+  } while (targetElement);
+  {
+    closeSelectLang();
   }
 });
 
