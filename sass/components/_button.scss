@@ -30,3 +30,27 @@
     background-color: $darkgreen;
   }
 }
+
+.button.button-loadmore {
+  position: relative;
+  clear: both;
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  color: #bdc1c0;
+  background-color: #fcfcfc;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.button.button-loadmore.style2 {
+  margin-top: 15px;
+}
+.button.button-loadmore .txt-loading {
+  display: none;
+}
+
+.button.button-loadmore:hover {
+  background: #fff;
+  color: #a6abab;
+}

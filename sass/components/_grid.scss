@@ -1,4 +1,5 @@
 // Grid
+
 .grid {
   clear: both;
   margin-left: -35px;
@@ -165,6 +166,12 @@
   white-space: inherit;
 }
 
+.list-items .box-info .row.row-auto {
+  height: auto;
+  white-space: inherit;
+  overflow: visible;
+}
+
 .list-items .box-info .footer.style2:before {
   content: '';
   position: absolute;
@@ -291,8 +298,24 @@
   border-top-color: #9fd2d6;
 }
 
+.list-items .box-style8 .title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.grid .button.button-loadmore {
+  transform: translateX(17px);
+}
+
 @include mediaMd {
   .grid {
     margin-left: -23px;
+  }
+}
+
+@media (max-width: 1570px) {
+  .list-items .box-style8 .title {
+    font-size: 30px;
   }
 }
