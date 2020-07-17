@@ -296,6 +296,27 @@ figure:after {
     color: #fff;
     background-color: #42ab9e; }
 
+.button.button-loadmore {
+  position: relative;
+  clear: both;
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  color: #bdc1c0;
+  background-color: #fcfcfc;
+  font-size: 17px;
+  font-weight: 400; }
+
+.button.button-loadmore.style2 {
+  margin-top: 15px; }
+
+.button.button-loadmore .txt-loading {
+  display: none; }
+
+.button.button-loadmore:hover {
+  background: #fff;
+  color: #a6abab; }
+
 /* Badget */
 .badget {
   padding: 5px 7px 3px 7px;
@@ -589,6 +610,48 @@ figure:after {
 .bt-circle.bt-twitter .ico-svg {
   height: 12px; }
 
+.bt-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer; }
+
+.bt-like .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 1;
+  transition: all 0.3s ease-in-out; }
+
+.bt-like .circle {
+  stroke: #bdc1c0; }
+
+.bt-like .ico-svg {
+  height: 11px;
+  z-index: 1;
+  transform: translateZ(0); }
+
+.bt-like .ico-svg {
+  fill: #bdc1c0; }
+
+.bt-like .number {
+  position: absolute;
+  bottom: -8px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out; }
+
 .list-share-circles.light .bt-circle {
   border-color: transparent; }
   .list-share-circles.light .bt-circle .ico-svg {
@@ -766,6 +829,9 @@ figure:after {
   padding-top: 0;
   padding-bottom: 0; }
 
+.block.pt-0 {
+  padding-top: 0; }
+
 .box-heading {
   display: flex;
   padding: 50px 0;
@@ -878,6 +944,90 @@ figure:after {
   opacity: 0;
   z-index: 0;
   transition: all 0.3s ease-in-out; }
+
+.rollover .bt-item:hover {
+  opacity: 0.7; }
+
+.rollover:not(.no-hover):hover .box-photo img {
+  opacity: 0.5; }
+
+.rollover:hover:not(.no-scale) .box-photo img {
+  transform: scale(1.05); }
+
+.rollover:not(.no-hover):hover:after {
+  opacity: 1; }
+
+.rollover:hover .hover-item {
+  visibility: visible;
+  opacity: 1; }
+
+.box-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 200; }
+
+.box-dropdown .option-active {
+  position: relative;
+  padding-right: 20px;
+  color: #49c5b6;
+  cursor: pointer; }
+
+.box-dropdown .option-active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border: 3px solid #49c5b6;
+  border-bottom: none;
+  border-left: none;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.box-dropdown.open .option-active:before {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.box-dropdown .options {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  color: #202121;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  -webkit-transform: translateY(-50%) scale(0.2);
+  transform: translateY(-50%) scale(0.2);
+  transition: all 0.3s ease-in-out; }
+
+.box-dropdown.open .options {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1); }
+
+.box-dropdown .options li {
+  background-color: #f4f7f6;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+
+.box-dropdown .options li:hover {
+  background-color: #e6eaea; }
+
+.box-dropdown .options .item-option {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #202121; }
 
 @media screen and (max-width: 1024px) {
   .inner:not(.full-width) {
@@ -1058,6 +1208,11 @@ figure:after {
   height: auto;
   white-space: inherit; }
 
+.list-items .box-info .row.row-auto {
+  height: auto;
+  white-space: inherit;
+  overflow: visible; }
+
 .list-items .box-info .footer.style2:before {
   content: '';
   position: absolute;
@@ -1163,9 +1318,21 @@ figure:after {
 .list-tags li.hm .tooltip-text:after {
   border-top-color: #9fd2d6; }
 
+.list-items .box-style8 .title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 120%; }
+
+.grid .button.button-loadmore {
+  transform: translateX(17px); }
+
 @media screen and (max-width: 700px) {
   .grid {
     margin-left: -23px; } }
+
+@media (max-width: 1570px) {
+  .list-items .box-style8 .title {
+    font-size: 30px; } }
 
 .side-nav {
   position: absolute;

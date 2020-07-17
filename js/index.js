@@ -2,6 +2,8 @@ var sideNav = document.getElementById('sideNav');
 var btMenu = document.getElementById('btMenu');
 var boxSearch = document.getElementById('box-search');
 var headerTop = document.querySelector('.header-top');
+var dropDownItem = document.querySelector('.option-active');
+var dropDown = document.querySelector('.box-dropdown');
 var body = document.body;
 var sticky = headerTop.offsetTop;
 
@@ -21,6 +23,16 @@ openSearch = () => {
   boxSearch.classList.add('show');
 };
 
+openDropDown = (e) => {
+  let dropDown = e.target.parentNode;
+
+  dropDown.classList.add('open');
+};
+
+closeDropDown = () => {
+  dropDown.classList.remove('open');
+};
+
 window.onscroll = () => myFunction();
 
 myFunction = () => {
@@ -30,6 +42,21 @@ myFunction = () => {
     body.classList.remove('header-fixed');
   }
 };
+
+document.addEventListener('click', (evt) => {
+  let targetElement = evt.target; // clicked element
+
+  do {
+    if (targetElement == dropDownItem) {
+      return;
+    }
+    // Go up the DOM
+    targetElement = targetElement.parentNode;
+  } while (targetElement);
+  {
+    closeDropDown();
+  }
+});
 
 document.addEventListener('click', (evt) => {
   let targetElement = evt.target; // clicked element
