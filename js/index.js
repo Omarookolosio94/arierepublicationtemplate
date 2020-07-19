@@ -4,8 +4,10 @@ var boxSearch = document.getElementById('box-search');
 var headerTop = document.querySelector('.header-top');
 var dropDownItem = document.querySelector('.option-active');
 var dropDown = document.querySelector('.box-dropdown');
+var shareLinks = document.querySelector('.openShareLinks');
 var selectLang = document.querySelector('.select');
 var body = document.body;
+
 var sticky = headerTop.offsetTop;
 
 openSideNav = () => {
@@ -30,6 +32,11 @@ openDropDown = (e) => {
   dropDown.classList.add('open');
 };
 
+openShareLink = () => {
+  shareLinks.classList.toggle('active');
+  console.log(shareLinks);
+};
+
 closeDropDown = () => {
   dropDown.classList.remove('open');
 };
@@ -43,8 +50,6 @@ window.onscroll = () => myFunction();
 myFunction = () => {
   if (window.pageYOffset > sticky) {
     body.classList.add('header-fixed');
-  } else {
-    body.classList.remove('header-fixed');
   }
 };
 
