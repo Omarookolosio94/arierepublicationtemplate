@@ -50,6 +50,8 @@ window.onscroll = () => myFunction();
 myFunction = () => {
   if (window.pageYOffset > sticky) {
     body.classList.add('header-fixed');
+  } else {
+    body.classList.remove('header-fixed');
   }
 };
 
