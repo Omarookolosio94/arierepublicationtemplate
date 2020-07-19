@@ -44,11 +44,12 @@
     font-weight: 400;
     line-height: 35px;
 
-    .ico-svg {
+    i {
       top: -2px;
       height: 22px;
       margin: 0 8px;
       vertical-align: middle;
+      font-weight: bold;
     }
   }
 
@@ -107,7 +108,7 @@
   display: inline-block;
   z-index: 200;
 
-  .ico-svg {
+  img {
     width: 18px;
     height: auto;
   }
