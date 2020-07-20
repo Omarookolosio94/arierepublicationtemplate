@@ -1,4 +1,5 @@
 var sideNav = document.getElementById('sideNav');
+var content = document.getElementById('content');
 var btMenu = document.getElementById('btMenu');
 var boxSearch = document.getElementById('box-search');
 var headerTop = document.querySelector('.header-top');
@@ -50,9 +51,11 @@ window.onscroll = () => myFunction();
 myFunction = () => {
   if (window.pageYOffset > sticky) {
     body.classList.add('header-fixed');
-  } else {
-    body.classList.remove('header-fixed');
+    content.classList.add('pt-70');
   }
+  // else {
+  //   body.classList.remove('header-fixed');
+  // }
 };
 
 document.addEventListener('click', (evt) => {

@@ -1,0 +1,91 @@
+.box-profile {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+
+  .box-left {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 29%;
+  }
+
+  .box-center {
+    width: 38%;
+    margin: 0 auto;
+    text-align: center;
+
+    .avatar {
+      margin-bottom: 15px;
+    }
+
+    .avatar img {
+      cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .row {
+      margin-bottom: 6px;
+      line-height: 25px;
+    }
+
+    .row.last {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      display: inline-block;
+      margin-bottom: 0;
+      line-height: 25px;
+    }
+
+    h1.has-url {
+      text-indent: 18px;
+    }
+
+    h2 {
+      width: 500px;
+      max-width: 100%;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  .list-bts {
+    display: -webkit-box;
+    display: flex;
+
+    li {
+      margin-right: 6px;
+    }
+  }
+}
+
+@include mediaMd {
+  .box-profile:not(.style2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .box-profile:not(.style2) .box-left,
+  .box-profile:not(.style2) .box-right {
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .box-profile:not(.style2) .box-center {
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  .box-profile:not(.style2) .list-bts {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}

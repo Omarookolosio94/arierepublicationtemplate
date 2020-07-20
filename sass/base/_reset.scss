@@ -268,9 +268,16 @@ a.text-black:hover {
   color: $blue;
 }
 
+.black {
+  color: $secondaryBg;
+}
 .heading-large {
   font-size: 38px;
   font-weight: 800;
+}
+.heading-medium {
+  font-size: 21px;
+  font-weight: bold;
 }
 
 figure {

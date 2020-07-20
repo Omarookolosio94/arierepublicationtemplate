@@ -379,9 +379,8 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
-  .ico-svg {
-    height: 14px;
-    fill: #000;
+  i {
+    // font-size: 14px;
     transition: all 0.3s ease-in-out;
   }
 
@@ -389,20 +388,25 @@
     border-color: #49c5b6;
 
     i {
-      color: $darkgreen;
+      color: $darkgreen !important;
     }
   }
 }
 
-// .bt-circle.bt-share .ico-svg {
-//   height: 13px;
-//   top: -1px;
-//   left: -1px;
-// }
+.bt-circle.medium {
+  width: 40px;
+  height: 40px;
+}
 
-// .bt-circle.bt-twitter .ico-svg {
-//   height: 12px;
-// }
+.bt-circle.bt-share i {
+  height: 13px;
+  top: -1px;
+  left: -1px;
+}
+
+.bt-circle.bt-twitter i {
+  height: 12px;
+}
 
 .bt-like {
   display: flex;
@@ -466,11 +470,6 @@
   color: #a6abab;
   border-color: #dbe0df;
 
-  &:hover {
-    color: #49c5b6;
-    border-color: #49c5b6;
-  }
-
   .number {
     margin: 0 4px 0 2px;
     font-size: 13px;
@@ -496,6 +495,18 @@
   color: #fcfcfc;
   border-color: #fcfcfc;
 }
+.bt-default.black {
+  color: #202121;
+  border-color: #202121;
+  font-weight: 500;
+}
+
+.bt-default.medium {
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+}
+
 .bt-default.bt-laurel {
   margin-right: 20px;
   padding: 0;
@@ -565,6 +576,43 @@
   &:hover svg {
     fill: #49c5b6;
   }
+}
+
+.bt-default.bt-laurel.black svg {
+  fill: #202121;
+}
+
+.bt-default.bt-laurel.medium svg {
+  top: -1px;
+  left: -20px;
+  width: auto;
+  height: 40px;
+}
+
+.bt-default.bt-laurel.medium .corner {
+  width: 20px;
+  height: 40px;
+}
+
+.bt-default.bt-laurel.black .borders:before,
+.bt-default.bt-laurel.black .borders:after,
+.bt-default.bt-laurel.black .corner:after {
+  border-color: #202121;
+}
+
+.bt-default.bt-laurel:hover .corner:after,
+.bt-default.bt-laurel:hover .borders:before,
+.bt-default.bt-laurel:hover .borders:after {
+  border-color: #49c5b6;
+}
+
+.bt-default.bt-laurel:hover svg {
+  fill: #49c5b6;
+}
+
+.bt-default:hover {
+  color: #49c5b6;
+  border-color: #49c5b6;
 }
 
 .box-users-likes {
@@ -714,6 +762,10 @@
   transition: background 0.3s ease-in-out;
 }
 
+.block.border-bottom {
+  border-bottom: 1px solid #e6eaea;
+}
+
 .block.p-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -750,6 +802,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .list-datas li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .list-datas a {
+    color: #202121;
   }
 }
 
