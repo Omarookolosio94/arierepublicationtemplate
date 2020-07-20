@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication - Profile</title>
+    <link rel="icon" href="./img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li>
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Categories</a>
+            </li>
+            <li>
+              <a href="" class="nav-link" data-count="20">Publications</a>
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <!-- Login Action -->
+            <div class="item login">
+              <span>Are you a member?</span>
+              <strong
+                ><a class="text-black open_login" href="/login"
+                  >Register / log in</a
+                ></strong
+              >
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="index.html" aria-label="Awwwards">
+              <span>
+                <img src="./img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+      <section id="content">
+        <div class="content-view">
+          <div
+            class="block border-bottom block-head-profile js-user-profile-info"
+            data-model='{"image":"avatar\/237203\/534888d5098b5.jpeg","username":"active_theory","displayName":"Active Theory","type":"user"}'
+          >
+            <div class="inner">
+              <div class="box-profile">
+                <div class="box-left">
+                  <div class="box-top">
+                    <ul class="list-bts">
+                      <li>
+                        <a
+                          href=""
+                          target="_blank"
+                          class="bt-circle bt-facebook medium black"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=" "
+                          target="_blank"
+                          class="bt-circle bt-twitter medium black"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=" "
+                          target="_blank"
+                          class="bt-circle bt-linkedin medium black"
+                        >
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          target="_blank"
+                          class="bt-circle bt-instagram medium black"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="js-profile-buttons-content">
+                          <a
+                            href="/active_theory/follow"
+                            class="bt-default medium black js-follow-user"
+                            data-username="active_theory"
+                            data-following=""
+                            data-text-start="Follow"
+                            data-text-end="Following"
+                          >
+                            <span class="js-bt-content">Follow</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-center">
+                  <div class="avatar">
+                    <img
+                      src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/237203/534888d5098b5.jpeg"
+                      width="70"
+                      height="70"
+                      alt="Active Theory"
+                      class="img-circle cursor-pointer"
+                    />
+                  </div>
+                  <div class="row">
+                    <h1 class="heading-medium has-url">
+                      Active Theory
+                      <!-- <a href="http://activetheory.net" target="_blank">
+                        <i class="fal fa-share"></i>
+                      </a> -->
+                    </h1>
+                  </div>
+                  <div class="row">
+                    <span class="text-gray">United States - Los Angeles</span>
+                  </div>
+                  <div class="row last">
+                    <h2>
+                      Active Theory is a creative digital production studio with
+                      offices in Los Angeles and Amsterdam. We make bold things
+                      for the big guys.
+                    </h2>
+                  </div>
+                </div>
+                <div class="box-right">
+                  <ul class="list-bts">
+                    <li>
+                      <a
+                        href="/active_theory/awards"
+                        class="bt-default bt-laurel medium black"
+                      >
+                        <svg width="19.7" height="37" viewBox="0 0 21.335 40">
+                          <path
+                            d="M16.185,0.502c-0.243-0.061-0.573-0.062-0.947-0.011c-1.252,0.173-2.504,1.055-2.847,2.002 c0.285,0.007,0.572,0.016,0.898-0.029C14.354,2.317,15.645,1.713,16.185,0.502z M10.769,6.173c-1.296,0.179-2.448,0.763-3.108,1.47 C8.104,7.772,8.674,7.787,9.373,7.69c1.297-0.179,2.64-0.744,3.346-1.456C12.186,6.119,11.513,6.07,10.769,6.173z M9.239,9.129 c-1.626,0.224-3.204,1.483-3.806,2.608c0.24,0.015,0.478,0.027,0.756-0.011c1.534-0.211,3.169-1.383,3.751-2.647 C9.708,9.111,9.469,9.098,9.239,9.129z M4.612,6.124c-0.941,1.408-0.874,3.955,0.108,5.238C5.515,9.927,5.428,7.242,4.612,6.124z  M7.387,2.238C6.426,3.506,6.296,5.985,7.133,7.243C7.954,5.993,8.071,3.421,7.387,2.238z M13.233,3.466 c-1.206,0.167-2.357,0.751-2.969,1.451c0.344,0.094,0.82,0.125,1.381,0.047c1.254-0.174,2.541-0.777,3.214-1.392 C14.41,3.397,13.837,3.383,13.233,3.466z M10.909,0C9.811,0.958,9.212,3.122,9.725,4.424C10.676,3.441,11.311,1.176,10.909,0z  M8.197,12.208L8.197,12.208c-1.811,0.25-3.605,2.343-4.036,4.012l0,0C5.918,15.93,7.876,14.002,8.197,12.208z M1.659,10.791 c-0.512,1.774,0.358,4.305,1.759,5.199C3.765,14.382,2.868,11.666,1.659,10.791z M4.181,21.848c1.691-0.756,3.131-3.366,2.954-5.329 C5.202,17.59,4.121,20.058,4.181,21.848z M7.42,20.645c-1.483,1.246-2.148,4.318-1.665,6.096C7.293,25.535,8.109,22.537,7.42,20.645 z M8.696,24.729c-1.277,2.068-1.01,4.684-0.129,6.262C9.727,29.461,9.828,26.416,8.696,24.729z M12.489,34.377 c0.671-1.652-0.051-4.488-1.505-5.752C10.442,30.877,11.335,33.213,12.489,34.377z M17.292,33.193 c0.347,1.801,2.214,3.67,4.016,4.037C20.903,35.346,19.09,33.512,17.292,33.193z M16.59,36.32c0.19-1.729-1.026-4.021-2.56-4.805 C13.943,33.607,15.247,35.512,16.59,36.32z M0.418,16.878c-0.123,1.861,1.356,4.356,3.05,4.974 C3.425,20.154,1.834,17.534,0.418,16.878z M5.025,26.936C4.423,24.986,1.83,22.645,0,22.426C0.482,24.535,2.97,26.797,5.025,26.936z  M11.902,34.936c-1.13-0.982-3.5-1.697-5.217-1.461c-0.325,0.045-0.597,0.133-0.824,0.211c1.056,1.131,3.182,1.783,4.945,1.541 C11.224,35.166,11.59,35.07,11.902,34.936z M15.652,39.813c0.598,0.197,1.356,0.238,2.148,0.129 c1.487-0.205,2.901-0.924,3.534-1.814c-0.542-0.162-1.209-0.168-1.948-0.066C17.814,38.328,16.297,39.012,15.652,39.813z  M7.861,31.371c-1.034-1.654-3.985-3.141-5.748-2.896c0,0,0,0-0.047,0.006c0.953,1.764,3.657,3.188,5.608,2.918 C7.769,31.383,7.815,31.377,7.861,31.371z M12.769,36.752c-1.161,0.16-2.103,0.527-2.648,1.029c0.872,0.494,2.124,0.65,3.378,0.479 c1.157-0.16,2.146-0.578,2.771-1.184C15.361,36.68,14.068,36.574,12.769,36.752z"
+                          ></path>
+                        </svg>
+                        <div class="borders">
+                          53 Awards
+                        </div>
+                        <div class="corner"></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://activetheory.net"
+                        class="bt-default medium black"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block pt-0 pb-0">
+          <div class="inner">
+            <div class="box-heading">
+              <div class="box-left">
+                <ul class="list-datas">
+                  <li><strong>55 Projects</strong></li>
+                  <li><a href="/active_theory/jobs">4 Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid activity js-grid">
+              <ul class="list-items list-flex js-elements-container">
+                <li class="col-3 js-collectable">
+                  <div class="box-item">
+                    <figure class="rollover">
+                      <a href=" ">
+                        <div class="box-photo">
+                          <img
+                            alt=" "
+                            width="417"
+                            height="298"
+                            class="lazy lazy-loaded"
+                            srcset="
+                              https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/07/5efc6bacf3022415696940.png 1x,
+                              https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/07/5efc6bacf3022415696940.png      2x
+                            "
+                          />
+                        </div>
+                      </a>
+
+                      <div class="hover-item top">
+                        <span class="js-options-collectable"></span>
+
+                        <span
+                          class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                        >
+                          <i class="fal fa-heart"></i>
+
+                          <span class="number">
+                            24
+                          </span>
+                        </span>
+                        <strong class="bt-item bt-default js-collect"
+                          >Collect</strong
+                        >
+                      </div>
+
+                      <div class="hover-item bottom">
+                        <a
+                          class="js-visit-item bt-item bt-link"
+                          href=" "
+                          target="_blank"
+                          rel="noopener nofollow"
+                        >
+                          <i class="fal fa-share"></i>
+                        </a>
+                      </div>
+                    </figure>
+
+                    <div class="box-info">
+                      <div class="content">
+                        <div class="row">
+                          <h3>
+                            <a href=" ">Million Piece Mission</a>
+                          </h3>
+                        </div>
+                        <div class="row row-2col">
+                          <div class="box-left">From United States</div>
+
+                          <div class="box-right">
+                            July 19, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer style2">
+                        <div class="box-left">
+                          <div class="box-byuser js-tooltip-user">
+                            <div
+                              class="item js-user"
+                              data-username="active_theory"
+                            >
+                              <a href=" /">
+                                <img
+                                  src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                                  width="27"
+                                  height="27"
+                                  alt=" "
+                                  class="lazy lazy-loaded"
+                                />
+                              </a>
+                            </div>
+                            <div class="by">
+                              by
+                              <strong
+                                ><a href=" " class="text-black"
+                                  >Active Theory</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-right">
+                          <ul class="list-tags size-small">
+                            <li class="hm">
+                              <div class="tooltip">
+                                <span class="item item-hm">HM</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Honorable Mention
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="dotd">
+                              <div class="tooltip">
+                                <span class="item item-dotd">DEV</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">Developer Site</div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="sotd">
+                              <div class="tooltip">
+                                <span class="item item-sotd">SOTD</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Site Of The Day
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-3 js-collectable">
+                  <div class="box-item">
+                    <figure class="rollover">
+                      <a href=" ">
+                        <div class="box-photo">
+                          <img
+                            alt=" "
+                            width="417"
+                            height="298"
+                            class="lazy lazy-loaded"
+                            srcset="
+                              https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/06/5ee90c5fb68ab000046928.png 1x,
+                              https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/06/5ee90c5fb68ab000046928.png      2x
+                            "
+                          />
+                        </div>
+                      </a>
+
+                      <div class="hover-item top">
+                        <span class="js-options-collectable"></span>
+
+                        <span
+                          class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                        >
+                          <i class="fal fa-heart"></i>
+
+                          <span class="number">
+                            32
+                          </span>
+                        </span>
+                        <strong class="bt-item bt-default js-collect"
+                          >Collect</strong
+                        >
+                      </div>
+
+                      <div class="hover-item bottom">
+                        <a
+                          class="js-visit-item bt-item bt-link"
+                          href=" "
+                          target="_blank"
+                          rel="noopener nofollow"
+                        >
+                          <i class="fal fa-share"></i>
+                        </a>
+                      </div>
+                    </figure>
+
+                    <div class="box-info">
+                      <div class="content">
+                        <div class="row">
+                          <h3>
+                            <a href=" ">Adventure Time: Distant Lands</a>
+                          </h3>
+                        </div>
+                        <div class="row row-2col">
+                          <div class="box-left">From United States</div>
+
+                          <div class="box-right">
+                            July 10, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer style2">
+                        <div class="box-left">
+                          <div class="box-byuser js-tooltip-user">
+                            <div class="item js-user">
+                              <a href=" ">
+                                <img
+                                  src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                                  width="27"
+                                  height="27"
+                                  alt=" "
+                                  class="lazy lazy-loaded"
+                                />
+                              </a>
+                            </div>
+                            <div class="by">
+                              by
+                              <strong
+                                ><a href=" " class="text-black"
+                                  >Active Theory</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-right">
+                          <ul class="list-tags size-small">
+                            <li class="hm">
+                              <div class="tooltip">
+                                <span class="item item-hm">HM</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Honorable Mention
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="dotd">
+                              <div class="tooltip">
+                                <span class="item item-dotd">DEV</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">Developer Site</div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="sotd">
+                              <div class="tooltip">
+                                <span class="item item-sotd">SOTD</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Site Of The Day
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-3 js-collectable">
+                  <div class="box-item">
+                    <figure class="rollover">
+                      <a href=" ">
+                        <div class="box-photo">
+                          <img
+                            alt=" "
+                            width="417"
+                            height="298"
+                            class="lazy lazy-loaded"
+                            srcset="
+                              https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/05/5ec3bbc3d59ce611750891.png 1x,
+                              https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/05/5ec3bbc3d59ce611750891.png      2x
+                            "
+                          />
+                        </div>
+                      </a>
+
+                      <div class="hover-item top">
+                        <span class="js-options-collectable"></span>
+
+                        <span
+                          class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                        >
+                          <i class="fal fa-heart"></i>
+                          <span class="number">
+                            87
+                          </span>
+                        </span>
+                        <strong class="bt-item bt-default js-collect"
+                          >Collect</strong
+                        >
+                      </div>
+
+                      <div class="hover-item bottom">
+                        <a
+                          class="js-visit-item bt-item bt-link"
+                          href=" "
+                          target="_blank"
+                          rel="noopener nofollow"
+                        >
+                          <i class="fal fa-share"></i>
+                        </a>
+                      </div>
+                    </figure>
+
+                    <div class="box-info">
+                      <div class="content">
+                        <div class="row">
+                          <h3>
+                            <a href=" ">Listening Together</a>
+                          </h3>
+                        </div>
+                        <div class="row row-2col">
+                          <div class="box-left">From United States</div>
+
+                          <div class="box-right">
+                            June 2, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer style2">
+                        <div class="box-left">
+                          <div class="box-byuser js-tooltip-user">
+                            <div class="item js-user">
+                              <a href=" ">
+                                <img
+                                  src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                                  width="27"
+                                  height="27"
+                                  alt=" "
+                                  class="lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="by">
+                              by
+                              <strong
+                                ><a href=" " class="text-black"
+                                  >Active Theory</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-right">
+                          <ul class="list-tags size-small">
+                            <li class="hm">
+                              <div class="tooltip">
+                                <span class="item item-hm">HM</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Honorable Mention
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="dotd">
+                              <div class="tooltip">
+                                <span class="item item-dotd">DEV</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">Developer Site</div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="sotd">
+                              <div class="tooltip">
+                                <span class="item item-sotd">SOTD</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Site Of The Day
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-3 js-collectable">
+                  <div class="box-item">
+                    <figure class="rollover">
+                      <a href=" ">
+                        <div class="box-photo">
+                          <img
+                            alt=" "
+                            width="417"
+                            height="298"
+                            class="lazy lazy-loaded"
+                            srcset="
+                              https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/03/5e67ab72bba06098070070.jpg 1x,
+                              https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/03/5e67ab72bba06098070070.jpg      2x
+                            "
+                          />
+                        </div>
+                      </a>
+
+                      <div class="hover-item top">
+                        <span class="js-options-collectable"></span>
+
+                        <span
+                          class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                        >
+                          <i class="fal fa-heart"></i>
+                          <span class="number">
+                            86
+                          </span>
+                        </span>
+                        <strong class="bt-item bt-default js-collect"
+                          >Collect</strong
+                        >
+                      </div>
+
+                      <div class="hover-item bottom">
+                        <a
+                          class="js-visit-item bt-item bt-link"
+                          href=" "
+                          target="_blank"
+                          rel="noopener nofollow"
+                        >
+                          <i class="fal fa-share"></i>
+                        </a>
+                      </div>
+                    </figure>
+
+                    <div class="box-info">
+                      <div class="content">
+                        <div class="row">
+                          <h3><a href=" ">Fiomet</a></h3>
+                        </div>
+                        <div class="row row-2col">
+                          <div class="box-left">From Netherlands</div>
+
+                          <div class="box-right">
+                            April 18, 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer style2">
+                        <div class="box-left">
+                          <div class="box-byuser js-tooltip-user">
+                            <div class="item js-user">
+                              <a href=" ">
+                                <img
+                                  src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                                  width="27"
+                                  height="27"
+                                  alt=" "
+                                  class="lazy"
+                                />
+                              </a>
+                            </div>
+                            <div class="by">
+                              by
+                              <strong
+                                ><a href=" " class="text-black"
+                                  >Active Theory</a
+                                ></strong
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-right">
+                          <ul class="list-tags size-small">
+                            <li class="hm">
+                              <div class="tooltip">
+                                <span class="item item-hm">HM</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Honorable Mention
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="dotd">
+                              <div class="tooltip">
+                                <span class="item item-dotd">DEV</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">Developer Site</div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="sotd">
+                              <div class="tooltip">
+                                <span class="item item-sotd">SOTD</span>
+                                <div class="box-tooltip">
+                                  <div class="tooltip-text">
+                                    Site Of The Day
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href=" " class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="c" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+            <div class="box-right">
+              <div class="headline">
+                Next Conferences
+                <i class="fal fa-calendar"></i>
+                <strong><a href="" class="link-1">Coming soon</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li><a rel="nofollow" href="">Contact Us</a></li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="">Cookies Policy</a>
+                </li>
+                <li><a rel="nofollow" href="">Legal Terms</a></li>
+                <li>
+                  <a rel="nofollow" href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick="openDropDown(event)">
+                      English
+                      <svg class="ico-svg" viewBox="0 0 14 9.334">
+                        <use
+                          xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#flag_en"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <ul class="options">
+                      <li
+                        lang="en"
+                        class="js-change-locale active"
+                        data-locale="en"
+                      >
+                        English
+                        <img src="./img/icons/uk.png" alt="" />
+                      </li>
+                      <li lang="es" class="js-change-locale" data-locale="es">
+                        Español - Spanish
+                        <img src="./img/icons/spain.png" alt="" />
+                      </li>
+                      <li lang="ko" class="js-change-locale" data-locale="ko">
+                        한국어 - Korean
+                        <img src="./img/icons/south-korea.png" alt="" />
+                      </li>
+                      <li lang="zh" class="js-change-locale" data-locale="zh">
+                        中國 - Chinese
+                        <img src="./img/icons/china.png" alt="" />
+                      </li>
+                      <li lang="ja" class="js-change-locale" data-locale="ja">
+                        日本語 - Japanese
+                        <img src="./img/icons/japan.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Private Cloud by
+                <strong
+                  ><a
+                    href="https://www.stackscale.com/"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >Stackscale</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
