@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication - Profiles</title>
+    <link rel="icon" href="./img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li>
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="profiles.html" class="nav-link"
+                >Professional Directory</a
+              >
+            </li>
+
+            <li>
+              <a href="" class="nav-link" data-count="20">Publications</a>
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <!-- Login Action -->
+            <div class="item login">
+              <span>Are you a member?</span>
+              <strong
+                ><a class="text-black open_login" href="/login"
+                  >Register / log in</a
+                ></strong
+              >
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="index.html" aria-label="Awwwards">
+              <span>
+                <img src="./img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+      <section id="content">
+        <div class="content-view">
+          <div class="inner">
+            <div class="box-heading">
+              <div class="box-left">
+                <strong
+                  >Connecting with the digital world.
+                  <a href="/plans/user-plans">Join the club!</a></strong
+                >
+              </div>
+              <div class="box-right">
+                <span class="total_users">3,433</span> professionals waiting.
+                <strong
+                  class="js-toggle cursor-pointer"
+                  data-id="toggle-heading"
+                  onclick="toggleInfo()"
+                  >More info</strong
+                >
+              </div>
+            </div>
+            <div class="toggle toggle-heading-half" id="toggle-heading">
+              <div class="box-content">
+                <h1 class="heading-xx-medium">
+                  Empowering talented agencies and freelancers with new clients
+                  and valuable connections.
+                </h1>
+                <p>
+                  The Awwwards Directory for agencies is the best place for web
+                  design and development agencies to be found on the internet,
+                  to build successful partnerships and win new clients. Join
+                  with either a Pro Plan or an International Plan to highlight
+                  your presence, be visible in your country and receive
+                  discounts for job adverts and conference tickets.
+                </p>
+              </div>
+            </div>
+            <div class="grid js-grid">
+              <ul class="list-items list-flex js-elements-container">
+                <li class="col-2-5">
+                  <div class="box-item box-style4">
+                    <a href=" " class="profile-link">Locomotive</a>
+                    <div class="box-cover">
+                      <figure class="rollover">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_background_retina/submissions/2020/07/5f064e16736dc764464349.jpg"
+                          class="lazy"
+                          alt=" "
+                        />
+                      </figure>
+                      <div class="avatar">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/210282/55a427118998b.jpeg"
+                          width="70"
+                          height="70"
+                          alt=" "
+                          class="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="box-info">
+                      <div class="content">
+                        <h3 class="row">
+                          <a href=" ">Locomotive</a>
+                        </h3>
+                        <div class="row">
+                          <strong
+                            ><a href=" " class="url" target="_blank"
+                              >locomotive.ca</a
+                            ></strong
+                          >
+                        </div>
+                        <div class="row">Canada</div>
+                      </div>
+                      <div class="footer">
+                        <ul class="list-number-awards items-4">
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>H.M</span>
+                                <strong>65</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Honorable Mention
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTD</span>
+                                <strong>41</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Site Of The Day</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTM</span>
+                                <strong>03</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Site Of The Month
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div
+                                class="box-item box-usertype js-usertype style-dark"
+                                data-type="user_type_jury"
+                              >
+                                <span class="text-uppercase">Jury </span>
+                                <i class="fal fa-user"></i>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Jury</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-5">
+                  <div class="box-item box-style4">
+                    <a href=" " class="profile-link">AQuest</a>
+                    <div class="box-cover">
+                      <figure class="rollover">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_background_retina/submissions/2020/05/5eb954a82c4b0764978951.jpg"
+                          class="lazy"
+                          alt=" "
+                        />
+                      </figure>
+                      <div class="avatar">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/221/5e5e82f158fa1592082665.jpg"
+                          width="70"
+                          height="70"
+                          alt=" "
+                          class="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="box-info">
+                      <div class="content">
+                        <h3 class="row"><a href=" ">AQuest</a></h3>
+                        <div class="row">
+                          <strong
+                            ><a href=" " class="url" target="_blank"
+                              >aquest.it</a
+                            ></strong
+                          >
+                        </div>
+                        <div class="row">Italy</div>
+                      </div>
+                      <div class="footer">
+                        <ul class="list-number-awards items-5">
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>H.M</span>
+                                <strong>61</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Honorable Mention
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTD</span>
+                                <strong>39</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Site Of The Day</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTM</span>
+                                <strong>03</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Site Of The Month
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTY</span>
+                                <strong>02</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Site Of The Year</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div
+                                class="box-item box-usertype js-usertype style-dark"
+                                data-type="user_type_pro"
+                              >
+                                <span class="text-uppercase">Int </span>
+                                <i class="fal fa-user"></i>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Int</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-5">
+                  <div class="box-item box-style4">
+                    <a href=" " class="profile-link"
+                      >Adveris - We're hiring !</a
+                    >
+                    <div class="box-cover">
+                      <figure class="rollover">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_background_retina/avatar/96496/5e70caf2d3012113230694.jpg"
+                          class="lazy"
+                          alt=" "
+                        />
+                      </figure>
+                      <div class="avatar">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/96496/5593ce7b1dd0e.png"
+                          width="70"
+                          height="70"
+                          alt=" "
+                          class="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="box-info">
+                      <div class="content">
+                        <h3 class="row">
+                          <a href=" ">Adveris - We're hiring !</a>
+                        </h3>
+                        <div class="row">
+                          <strong
+                            ><a href=" " class="url" target="_blank"
+                              >adveris.fr</a
+                            ></strong
+                          >
+                        </div>
+                        <div class="row">France</div>
+                      </div>
+                      <div class="footer">
+                        <ul class="list-number-awards items-2">
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>H.M</span>
+                                <strong>30</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Honorable Mention
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div
+                                class="box-item box-usertype js-usertype style-dark"
+                                data-type="user_type_pro"
+                              >
+                                <span class="text-uppercase">Int </span>
+                                <i class="fal fa-user"></i>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Int</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="col-2-5">
+                  <div class="box-item box-style4">
+                    <a href=" " class="profile-link">Hello Monday</a>
+                    <div class="box-cover">
+                      <figure class="rollover">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_background_retina/submissions/2020/05/5eb287ac904f3841504398.jpg"
+                          class="lazy"
+                          alt=" "
+                        />
+                      </figure>
+                      <div class="avatar">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_retina/avatar/196/547e36f11e834.png"
+                          width="70"
+                          height="70"
+                          alt=" "
+                          class="lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="box-info">
+                      <div class="content">
+                        <h3 class="row">
+                          <a href=" ">Hello Monday</a>
+                        </h3>
+                        <div class="row">
+                          <strong
+                            ><a href=" " class="url" target="_blank"
+                              >hellomonday.com</a
+                            ></strong
+                          >
+                        </div>
+                        <div class="row">United States</div>
+                      </div>
+                      <div class="footer">
+                        <ul class="list-number-awards items-5">
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>H.M</span>
+                                <strong>46</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Honorable Mention
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTD</span>
+                                <strong>42</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Site Of The Day</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTM</span>
+                                <strong>09</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">
+                                  Site Of The Month
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div class="box-item">
+                                <span>SOTY</span>
+                                <strong>01</strong>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Site Of The Year</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="tooltip">
+                              <div
+                                class="box-item box-usertype js-usertype style-dark"
+                                data-type="user_type_pro"
+                              >
+                                <span class="text-uppercase">Int </span>
+                                <i class="fal fa-user"></i>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">Int</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="paginate">
+                <div class="col-3">
+                  <span class="current item">1</span
+                  ><a class="item" href="/directory/?page=2">2</a
+                  ><a class="item" href="/directory/?page=3">3</a>
+                </div>
+                <div class="col-3">
+                  <a class="item more" href="/directory/?page=2"
+                    >SHOW ME MORE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href=" " class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="c" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+            <div class="box-right">
+              <div class="headline">
+                Next Conferences
+                <i class="fal fa-calendar"></i>
+                <strong><a href="" class="link-1">Coming soon</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li><a rel="nofollow" href="">Contact Us</a></li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="">Cookies Policy</a>
+                </li>
+                <li><a rel="nofollow" href="">Legal Terms</a></li>
+                <li>
+                  <a rel="nofollow" href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick="openDropDown(event)">
+                      English
+                      <svg class="ico-svg" viewBox="0 0 14 9.334">
+                        <use
+                          xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#flag_en"
+                        ></use>
+                      </svg>
+                    </div>
+
+                    <ul class="options">
+                      <li
+                        lang="en"
+                        class="js-change-locale active"
+                        data-locale="en"
+                      >
+                        English
+                        <img src="./img/icons/uk.png" alt="" />
+                      </li>
+                      <li lang="es" class="js-change-locale" data-locale="es">
+                        Español - Spanish
+                        <img src="./img/icons/spain.png" alt="" />
+                      </li>
+                      <li lang="ko" class="js-change-locale" data-locale="ko">
+                        한국어 - Korean
+                        <img src="./img/icons/south-korea.png" alt="" />
+                      </li>
+                      <li lang="zh" class="js-change-locale" data-locale="zh">
+                        中國 - Chinese
+                        <img src="./img/icons/china.png" alt="" />
+                      </li>
+                      <li lang="ja" class="js-change-locale" data-locale="ja">
+                        日本語 - Japanese
+                        <img src="./img/icons/japan.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Private Cloud by
+                <strong
+                  ><a
+                    href="https://www.stackscale.com/"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >Stackscale</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
