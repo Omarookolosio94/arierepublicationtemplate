@@ -1,7 +1,19 @@
+@media screen and (max-width: 1549px) {
+  .grid .list-items .col-2-5 {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width: 1461px) {
   .grid .paginate .col-3,
   .grid .list-items .col-3,
   body.home .box-heading .col-3 {
+    width: 33.33333%;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .grid .list-items .col-2-5 {
     width: 33.33333%;
   }
 }
@@ -23,11 +35,25 @@
   }
 }
 
+@media screen and (max-width: 827px) {
+  .grid .list-items .col-2-5 {
+    width: 50%;
+  }
+}
+
 @include mediaMd {
   .grid [class*='col-'],
   .grid [class*='cols-'] {
     padding-left: 23px;
     padding-bottom: 23px;
+  }
+
+  .not-mobile,
+  .has-tablet,
+  .tooltip-user,
+  .box-heading .box-right,
+  .bt-page {
+    display: none !important;
   }
 }
 
@@ -42,5 +68,11 @@
 @media (max-width: 468px) {
   .grid:not(.no-bp) [class*='col-'] {
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .grid .list-items .col-2-5 {
+    width: 100%;
   }
 }

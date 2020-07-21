@@ -275,6 +275,11 @@ a.text-black:hover {
   font-size: 38px;
   font-weight: 800;
 }
+
+.heading-xx-medium {
+  font-size: 32px;
+  font-weight: bold;
+}
 .heading-medium {
   font-size: 21px;
   font-weight: bold;
@@ -283,6 +288,11 @@ a.text-black:hover {
 figure {
   position: relative;
   display: inline-block;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 figure:after {

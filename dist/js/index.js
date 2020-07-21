@@ -1,6 +1,7 @@
 var sideNav = document.getElementById('sideNav');
 var content = document.getElementById('content');
 var btMenu = document.getElementById('btMenu');
+var toggleHeading = document.getElementById('toggle-heading');
 var boxSearch = document.getElementById('box-search');
 var headerTop = document.querySelector('.header-top');
 var dropDownItem = document.querySelector('.option-active');
@@ -31,6 +32,10 @@ openDropDown = (e) => {
   let dropDown = e.target.parentNode;
 
   dropDown.classList.add('open');
+};
+
+toggleInfo = (e) => {
+  toggleHeading.classList.toggle('show');
 };
 
 openShareLink = () => {

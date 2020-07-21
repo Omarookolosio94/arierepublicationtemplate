@@ -14,6 +14,14 @@
     width: 29%;
   }
 
+  .box-profile .box-right {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 29%;
+  }
+
   .box-center {
     width: 38%;
     margin: 0 auto;
