@@ -2534,7 +2534,10 @@ body.ht-visible .wrapper {
   .site-link,
   .box-br,
   .box-bl {
-    display: none !important; } }
+    display: none !important; }
+  .box-profile .curated .by,
+  .box-profile.style2 .bottom .box-right .list-users {
+    display: none; } }
 
 .box-profile {
   position: relative;
