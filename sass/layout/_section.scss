@@ -297,4 +297,9 @@
   .box-bl {
     display: none !important;
   }
+
+  .box-profile .curated .by,
+  .box-profile.style2 .bottom .box-right .list-users {
+    display: none;
+  }
 }
