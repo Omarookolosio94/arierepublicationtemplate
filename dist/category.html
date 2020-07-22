@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication - Publications</title>
+    <link rel="icon" href="./img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li>
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="profiles.html" class="nav-link"
+                >Professional Directory</a
+              >
+            </li>
+
+            <li>
+              <a href="category.html" class="nav-link" data-count="20"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <!-- Login Action -->
+            <div class="item login">
+              <span>Are you a member?</span>
+              <strong
+                ><a class="text-black open_login" href="/login"
+                  >Register / log in</a
+                ></strong
+              >
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="index.html" aria-label="Awwwards">
+              <span>
+                <img src="./img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+
+      <section id="content">
+        <div class="content-view">
+          <div class="block">
+            <div class="inner search-container">
+              <div class="grid js-grid">
+                <ul class="list-items list-flex js-elements-container">
+                  <li class="collection col-3">
+                    <div class="box-item">
+                      <figure class="rollover darken">
+                        <a href=" " class="item-link"></a>
+                        <div class="box-photo">
+                          <img
+                            width="417"
+                            height="298"
+                            src="https://assets.awwwards.com/awards/images/2018/08/trans.jpg"
+                            alt=" "
+                            class="lazy lazy-loaded"
+                          />
+                        </div>
+                        <div class="hover-item has-hover center">
+                          <h3 class="js-title-collection">
+                            The Best of Navigation
+                          </h3>
+                          <div>294 Elements</div>
+                        </div>
+                      </figure>
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a class="js-title-collection" href=" ">
+                                The Best of Navigation
+                              </a>
+                            </h3>
+                          </div>
+                          <div class="row row-auto">
+                            Curated by
+                            <strong><a href=" ">Awwwards</a></strong>
+                          </div>
+                        </div>
+                        <div class="footer">
+                          <div class="box-left">
+                            <div class="box-users-likes">
+                              <ul class="list-users">
+                                <li>
+                                  <div
+                                    class="item js-user"
+                                    data-username="Letsknotweddings"
+                                  >
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div
+                                    class="item js-user"
+                                    data-username="chanai"
+                                  >
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945497/5f1662c54f440814130036.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user4.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945950/5f17bcbc0daa6351821329.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+                              </ul>
+
+                              <div class="container-bt-circle">
+                                <div class="tooltip">
+                                  <div class="bt-like js-more">
+                                    <svg viewBox="0 0 27 27" class="circle">
+                                      <path
+                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
+                                      ></path>
+                                    </svg>
+                                    <i class="fal fa-user"></i>
+
+                                    <span class="number js-number">1241</span>
+                                  </div>
+                                  <div class="box-tooltip">
+                                    <div class="tooltip-text">
+                                      View followers
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-right js-render-follow-button">
+                            <div
+                              class="bt-default small js-follow js-button-follow"
+                            >
+                              <span class="js-bt-content">
+                                Follow
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="collection col-3">
+                    <div class="box-item">
+                      <figure class="rollover darken">
+                        <a href=" " class="item-link"></a>
+                        <div class="box-photo">
+                          <img
+                            width="417"
+                            height="298"
+                            src="https://assets.awwwards.com/awards/images/2020/05/portfolio-collection-1.jpg"
+                            alt=" "
+                            class="lazy lazy-loaded"
+                          />
+                        </div>
+                        <div class="hover-item has-hover center">
+                          <h3 class="js-title-collection">
+                            Freelance Portfolios
+                          </h3>
+                          <div>175 Elements</div>
+                        </div>
+                      </figure>
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a class="js-title-collection" href=" ">
+                                Freelance Portfolios
+                              </a>
+                            </h3>
+                          </div>
+                          <div class="row row-auto">
+                            Curated by
+                            <strong><a href=" ">Awwwards</a></strong>
+                          </div>
+                        </div>
+                        <div class="footer">
+                          <div class="box-left">
+                            <div class="box-users-likes">
+                              <ul class="list-users">
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div
+                                    class="item js-user"
+                                    data-username="history-18"
+                                  >
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945950/5f17bcbc0daa6351821329.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+                              </ul>
+
+                              <div class="container-bt-circle">
+                                <div class="tooltip">
+                                  <div class="bt-like js-more">
+                                    <svg viewBox="0 0 27 27" class="circle">
+                                      <path
+                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
+                                      ></path>
+                                    </svg>
+                                    <i class="fal fa-user"></i>
+
+                                    <span class="number js-number">997</span>
+                                  </div>
+                                  <div class="box-tooltip">
+                                    <div class="tooltip-text">
+                                      View followers
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-right js-render-follow-button">
+                            <div
+                              class="bt-default small js-follow js-button-follow"
+                              data-text-start="Follow"
+                              data-text-end="Following"
+                            >
+                              <span class="js-bt-content">
+                                Follow
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="collection col-3">
+                    <div class="box-item">
+                      <figure class="rollover darken">
+                        <a href="" class="item-link"></a>
+                        <div class="box-photo">
+                          <img
+                            width="417"
+                            height="298"
+                            src="https://assets.awwwards.com/awards/images/2018/07/TRANSITIONS.jpg"
+                            alt="Transitions"
+                            class="lazy lazy-loaded"
+                          />
+                        </div>
+                        <div class="hover-item has-hover center">
+                          <h3 class="js-title-collection">
+                            Transitions
+                          </h3>
+                          <div>213 Elements</div>
+                        </div>
+                      </figure>
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a class="js-title-collection" href=" ">
+                                Transitions
+                              </a>
+                            </h3>
+                          </div>
+                          <div class="row row-auto">
+                            Curated by
+                            <strong><a href=" ">Awwwards</a></strong>
+                          </div>
+                        </div>
+                        <div class="footer">
+                          <div class="box-left">
+                            <div class="box-users-likes">
+                              <ul class="list-users">
+                                <li>
+                                  <div class="item js-user" data-username=" ">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945385/5f15d2675ff4b872603847.jpeg"
+                                        width="27"
+                                        height="27"
+                                        alt=""
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href="/chanai/">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/945497/5f1662c54f440814130036.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user4.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="item js-user">
+                                    <a href=" ">
+                                      <img
+                                        src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                        width="27"
+                                        height="27"
+                                        alt=" "
+                                        class="lazy lazy-loaded"
+                                    /></a>
+                                  </div>
+                                </li>
+                              </ul>
+
+                              <div class="container-bt-circle">
+                                <div class="tooltip">
+                                  <div class="bt-like js-more">
+                                    <svg viewBox="0 0 27 27" class="circle">
+                                      <path
+                                        d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52"
+                                      ></path>
+                                    </svg>
+                                    <i class="fal fa-user"></i>
+
+                                    <span class="number js-number">1094</span>
+                                  </div>
+                                  <div class="box-tooltip">
+                                    <div class="tooltip-text">
+                                      View followers
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-right js-render-follow-button">
+                            <div
+                              class="bt-default small js-follow js-button-follow"
+                            >
+                              <span class="js-bt-content">
+                                Follow
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="paginate">
+                  <div class="col-3">
+                    <span class="current item">1</span
+                    ><a class="item" href=" ">2</a
+                    ><a class="item" href=" ">3</a>
+                  </div>
+                  <div class="col-3">
+                    <a class="item more" href=" ">SHOW ME MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href=" " class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="c" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+            <div class="box-right">
+              <div class="headline">
+                Next Conferences
+                <i class="fal fa-calendar"></i>
+                <strong><a href="" class="link-1">Coming soon</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li><a rel="nofollow" href="">Contact Us</a></li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="">Cookies Policy</a>
+                </li>
+                <li><a rel="nofollow" href="">Legal Terms</a></li>
+                <li>
+                  <a rel="nofollow" href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick="openDropDown(event)">
+                      English
+                      <img src="./img/icons/uk.png" alt="" />
+                    </div>
+
+                    <ul class="options">
+                      <li
+                        lang="en"
+                        class="js-change-locale active"
+                        data-locale="en"
+                      >
+                        English
+                        <img src="./img/icons/uk.png" alt="" />
+                      </li>
+                      <li lang="es" class="js-change-locale" data-locale="es">
+                        Español - Spanish
+                        <img src="./img/icons/spain.png" alt="" />
+                      </li>
+                      <li lang="ko" class="js-change-locale" data-locale="ko">
+                        한국어 - Korean
+                        <img src="./img/icons/south-korea.png" alt="" />
+                      </li>
+                      <li lang="zh" class="js-change-locale" data-locale="zh">
+                        中國 - Chinese
+                        <img src="./img/icons/china.png" alt="" />
+                      </li>
+                      <li lang="ja" class="js-change-locale" data-locale="ja">
+                        日本語 - Japanese
+                        <img src="./img/icons/japan.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Private Cloud by
+                <strong
+                  ><a
+                    href="https://www.stackscale.com/"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >Stackscale</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
