@@ -58,9 +58,6 @@ myFunction = () => {
     body.classList.add('header-fixed');
     content.classList.add('pt-70');
   }
-  // else {
-  //   body.classList.remove('header-fixed');
-  // }
 };
 
 document.addEventListener('click', (evt) => {
