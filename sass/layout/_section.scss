@@ -240,6 +240,10 @@
 }
 
 @include mediaMd {
+  .box-breadcrumb,
+  .box-recommended {
+    display: none;
+  }
   .box-site-head .box-photo img {
     display: block;
     width: 100%;

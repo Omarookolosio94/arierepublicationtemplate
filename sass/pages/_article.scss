@@ -1,0 +1,67 @@
+.entry {
+  font-size: 20px;
+  line-height: 35px;
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-family: 'Trocchi', serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 150%;
+  }
+  p {
+    line-height: 1.7em;
+  }
+
+  a {
+    font-weight: bold;
+  }
+  a:not(.button) {
+    text-decoration: underline;
+  }
+
+  blockquote {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 50px 0;
+    font-size: 24px;
+    font-family: 'Trocchi', serif;
+    color: #49c5b6;
+    line-height: 150%;
+  }
+
+  figure {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+
+  figcaption {
+    padding-top: 15px;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 140%;
+  }
+}
+
+.entry blockquote::before {
+  content: '“';
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  font-size: 60px;
+  font-style: normal;
+}
+
+.featured-photo {
+  margin-bottom: 45px;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .entry {
+    font-size: 17px;
+  }
+}
