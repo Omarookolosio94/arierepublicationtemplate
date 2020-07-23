@@ -76,6 +76,9 @@
 .inner.width-1 {
   width: 1430px;
 }
+.inner.width-2 {
+  width: 1050px;
+}
 
 .inner.width-4 {
   width: 1081px;
@@ -311,6 +314,21 @@
 
 .text-x-thin {
   font-weight: 100;
+}
+
+.box-block {
+  margin-bottom: 1px;
+  padding: 35px;
+  background-color: #fcfcfc;
+}
+
+.box-block {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.box-block.style2 {
+  margin-bottom: 35px;
 }
 
 .list-share-circles {
@@ -851,6 +869,11 @@
   .list-datas a {
     color: #202121;
   }
+}
+
+.box-heading-page {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 // Grid

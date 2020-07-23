@@ -207,36 +207,6 @@ button {
 .fs-18 {
   font-size: 18px;
 }
-.text-italic {
-  font-style: italic;
-}
-.text-x-thin {
-  font-weight: 100;
-}
-.text-thin {
-  font-weight: 300;
-}
-.text-bold {
-  font-weight: 500;
-}
-.text-x-bold {
-  font-weight: 800;
-}
-.text-justify {
-  text-align: justify;
-}
-.text-left {
-  text-align: left;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-lowercase {
-  text-transform: lowercase;
-}
-.text-strikethrough {
-  text-decoration: line-through;
-}
 .text-black {
   color: $secondaryBg;
 }
@@ -271,9 +241,47 @@ a.text-black:hover {
 .black {
   color: $secondaryBg;
 }
+
+.heading-underline {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  padding-bottom: 15px;
+  text-align: center;
+  line-height: normal;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.heading-underline.style-left {
+  text-align: left;
+}
+
+.heading-underline:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80px;
+  height: 4px;
+  transform: translateX(-50%);
+  background-color: #202121;
+}
+
+.heading-underline.style-left:after {
+  left: 0;
+  transform: none;
+}
+
 .heading-large {
   font-size: 38px;
   font-weight: 800;
+}
+
+.heading-small {
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .header-post {
@@ -335,38 +343,6 @@ a.text-black:hover {
   font-weight: bold;
 }
 
-.heading-underline {
-  position: relative;
-  width: 100%;
-  margin-bottom: 12px;
-  padding-bottom: 15px;
-  text-align: center;
-  line-height: normal;
-  font-size: 19px;
-  font-weight: 700;
-}
-
-.heading-underline.style-left {
-  text-align: left;
-}
-
-.heading-underline:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  display: block;
-  width: 80px;
-  height: 4px;
-  transform: translateX(-50%);
-  background-color: #202121;
-}
-
-.heading-underline.style-left:after {
-  left: 0;
-  transform: none;
-}
-
 figure {
   position: relative;
   display: inline-block;
@@ -381,6 +357,37 @@ figure:after {
   content: '';
   display: block;
   clear: both;
+}
+
+.text-italic {
+  font-style: italic;
+}
+.text-x-thin {
+  font-weight: 100;
+}
+.text-thin {
+  font-weight: 300;
+}
+.text-bold {
+  font-weight: 500;
+}
+.text-x-bold {
+  font-weight: 800;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-strikethrough {
+  text-decoration: line-through;
 }
 
 @include mediaMd {
