@@ -1,0 +1,20 @@
+{
+  "name": "Ariere Publication",
+  "short_name": "AR",
+  "icons": [
+    {
+      "src": "./img/icons/arlogobar.svg",
+      "type": "image/svg",
+      "sizes": "58x56"
+    },
+    {
+      "src": "./img/icons/arlogobar.svg",
+      "type": "image/svg",
+      "sizes": "58x56"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#3ea094",
+  "background_color": "#f4f7f6",
+  "display": "standalone"
+}
