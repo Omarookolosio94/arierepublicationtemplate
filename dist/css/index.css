@@ -370,15 +370,16 @@ figure:after {
   border: none;
   overflow: hidden;
   transition: all 0.3s ease-in-out; }
-  .button .button-large {
-    height: 70px;
-    line-height: 71px; }
   .button span {
     position: relative;
     z-index: 1; }
   .button:hover {
     color: #fff;
     background-color: #42ab9e; }
+
+button.button-large {
+  height: 70px;
+  line-height: 71px; }
 
 .button.button-loadmore {
   position: relative;
