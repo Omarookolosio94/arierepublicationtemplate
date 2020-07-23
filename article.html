@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication - Article</title>
+    <link rel="icon" href="./img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./fa-light/light.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li>
+              <span class="nav-item">Register/Log In</span>
+            </li>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="profiles.html" class="nav-link"
+                >Professional Directory</a
+              >
+            </li>
+
+            <li>
+              <a href="category.html" class="nav-link" data-count="20"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="categories.html" class="nav-link" data-count="20"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <!-- Login Action -->
+            <div class="item login">
+              <span>Are you a member?</span>
+              <strong
+                ><a class="text-black open_login" href="/login"
+                  >Register / log in</a
+                ></strong
+              >
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="index.html" aria-label="Awwwards">
+              <span>
+                <img src="./img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+      <section id="content">
+        <div class="content-view">
+          <div class="block pt-0">
+            <div class="inner js-post js-single-element">
+              <div class="box-breadcrumb">
+                <div class="box-left">
+                  <strong class="parent"><a href=" ">Magazine</a></strong>
+                  for designers and web developers
+                </div>
+                <div class="box-right">
+                  <div class="box-users-likes">
+                    <ul class="list-users">
+                      <li>
+                        <div class="item js-user" data-username="deped">
+                          <a href=" ">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/387077/585daa4d91ae0.jpg"
+                              width="34"
+                              height="34"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                          /></a>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item js-user">
+                          <a href=" ">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/552391/5e81de884ac6a746661488.jpg"
+                              width="34"
+                              height="34"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                          /></a>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item js-user">
+                          <a href=" /">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/505267/592ce556e6460.jpg"
+                              width="34"
+                              height="34"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                          /></a>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item js-user">
+                          <a href="profile.html">
+                            <img
+                              src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/718962/5c6fb2ded47b8165580660.png"
+                              width="34"
+                              height="34"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                          /></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <span
+                      class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                    >
+                      <i class="fal fa-heart"></i>
+
+                      <span class="number">
+                        25
+                      </span>
+                    </span>
+                    <strong class="bt-item bt-default js-collect"
+                      >Collect</strong
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <article itemscope="" itemtype="https://schema.org/Article">
+              <div class="header-post horizontal-center">
+                <div class="inner width-4">
+                  <div class="row">
+                    <h1 class="heading-large" itemprop="headline name">
+                      Climate: A Case Study by Platoon
+                    </h1>
+                  </div>
+                  <div class="row info">
+                    Article by
+                    <strong
+                      ><a href="/platoon/"
+                        ><span itemprop="name author">Platoon</span></a
+                      ></strong
+                    >
+                    in
+                    <strong
+                      ><a href="/blog/web-design-tag/"
+                        ><span itemprop="about">Web Design</span></a
+                      ></strong
+                    >
+                    -
+                    <span
+                      itemprop="datePublished"
+                      content="2019-01-30T10:19:00+00:00"
+                      >January 30</span
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="list-share-circles">
+                      <ul>
+                        <li>
+                          <div class="bt-circle bt-facebook popup">
+                            <i class="fab fa-facebook-f"></i>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="bt-circle bt-twitter popup">
+                            <i class="fab fa-twitter"></i>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="bt-circle bt-instagram popup">
+                            <i class="fab fa-instagram"></i>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="entry entry-blog" itemprop="articleBody">
+                <div class="inner full-width">
+                  <div class="featured-photo">
+                    <picture>
+                      <img
+                        src="https://assets.awwwards.com/awards/images/2019/01/thisisclimate-case-cover.jpg"
+                        itemprop="image"
+                        alt="Climate: A Case Study by Platoon"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="inner width-4 first-letter" id="entry-text">
+                  <h2>The Project</h2>
+                  <p>
+                    <a target="_blank" href=" ">Climate</a>
+                    produces standout media for some of today’s largest consumer
+                    brands. They work alongside agencies and in-house teams to
+                    develop and execute creative concepts for various global
+                    campaigns and initiatives. Platoon was asked to help launch
+                    the company by-way of establishing a visual identity and
+                    website. The brief held two core goals: 1. to create an
+                    identity that reflected the company’s unique personality and
+                    2. to create an online portfolio that would catch the eye of
+                    their ideal clientele.
+                  </p>
+                  <h2>Our Approach</h2>
+                  <p>
+                    It was important that Climate launch with a bang. With a
+                    target audience of bold creative directors, we needed to
+                    figure out a way to visually portray their personality and
+                    style in an exciting way that would break through the noise.
+                  </p>
+                  <p>
+                    We spent two days with Climate’s leadership learning about
+                    who they are and how they work. We gained a deep
+                    understanding of their target market, their vision for the
+                    future, and uncovered what really sets them apart from
+                    competitors. During our time together, it became clear how
+                    resourceful of a company Climate is, allowing for a rather
+                    unconventional yet effective approach to creative projects.
+                    We needed to create an identity and online experience that
+                    reflected each of their unique traits.
+                  </p>
+
+                  <blockquote>
+                    We pulled a lot of visual inspiration from areas of their
+                    team’s personal interests: skateboarding, punk/hardcore
+                    music, and streetwear fashion.
+                  </blockquote>
+
+                  <p>
+                    Through close collaboration with Climate’s founder, we began
+                    building a visual direction that would reflect their
+                    personality while establishing a unique look and feel in the
+                    market. We pulled a lot of visual inspiration from areas of
+                    their team’s personal interests: skateboarding,
+                    punk/hardcore music, and streetwear fashion amongst many
+                    more.
+                  </p>
+
+                  <p>
+                    As soon as a general direction was defined, our team began
+                    ideating actual identity concepts led by art director,
+                    Garrett DeRossett. We ultimately landed on three unique
+                    concepts that we felt supported the strategy and
+                    requirements set forth.
+                  </p>
+
+                  <p>
+                    Before we had even finished presenting all of the concepts,
+                    it was clear that we had an immediate unanimous winner, and
+                    we knew we had created something truly special. Upon
+                    selecting a concept, we further refined the identity and
+                    began applying it to various touch-points.
+                  </p>
+
+                  <p>
+                    “The Climate identity was always meant to be a
+                    <em>vibe</em> rather than a brand. Equally
+                    <b>inspired by vintage trucking logomarks</b> and
+                    <b>modern fashion design</b>, we set out to make an identity
+                    that felt worldly, aggressive, inclusive, but most of all —
+                    effortless. The result meant we were able to apply it easily
+                    to interesting collateral and promotional items that let
+                    Climate look like more of a club or a clothing company as
+                    opposed to an agency.” — Garrett DeRossett
+                  </p>
+                  <p>
+                    In addition to the required stationery items, we produced
+                    shirts, hats, stickers, buttons, and other accessories that
+                    would increase brand awareness and draw attention to the
+                    company.
+                  </p>
+
+                  <blockquote>
+                    Using WebGL, we created an interactive 3D logo that reacts
+                    to the user’s cursor position, whilst sitting atop of slowly
+                    scrolling samples of Climate’s work, creating a whimsical
+                    yet memorable experience
+                  </blockquote>
+
+                  <h2>It’s Alive!</h2>
+                  <p>
+                    Climate’s logo is three-dimensional. We wanted visitors to
+                    not only see but interact with the logo in a way that would
+                    leave a lasting impression. Using <b>WebGL</b>, we created
+                    an <b>interactive 3D logo </b>that reacts to the user’s
+                    cursor position, whilst sitting atop of slowly scrolling
+                    samples of Climate’s work, creating a whimsical yet
+                    memorable experience. Our goal in this project was to
+                    showcase their body of work in a way that would make users
+                    <em>actually</em> pay attention to it.
+                  </p>
+
+                  <p>
+                    We approached the creation of the 3D logo with a clean
+                    slate— asking ourselves, "What is the least amount of
+                    software that can be used to get this done?" In the majority
+                    of cases, it does not involve a heavy library like
+                    <b>Three.js.</b> The interactive logo didn’t need any fancy
+                    model or texture loading, skeletal animation, audio, or any
+                    of the other many pieces of functionality that Three.js
+                    wraps. We think it's important to critically judge the
+                    (often subtle) downsides of using a library/framework — a
+                    skill that only comes only after doing things the wrong way
+                    many times over.
+                  </p>
+
+                  <blockquote>
+                    By building the renderer from scratch, we were able to have
+                    absolute control over every draw call and squeeze out great
+                    performance even on really low-end devices.
+                  </blockquote>
+
+                  <p>
+                    By building the renderer from scratch, we were able to have
+                    absolute control over every draw call and squeeze out great
+                    performance even on really low-end devices. The development
+                    machine we used is a $200 Celeron-based netbook, which keeps
+                    our scope of reference at the bottom of the totem pole. If
+                    it runs great on this machine, it's going to run wonderfully
+                    on most everyone else's device.
+                  </p>
+                  <p>
+                    Using<a target="_blank" href=" "> Blender</a>, we extruded
+                    the original vector logo and exported the vertices as a
+                    plain array of floats ready for the GPU and baked it right
+                    into the source code (no .JSON, .OBJ, or .DAE here).
+                  </p>
+                  <p>
+                    On capable mobile devices, the position of the logo is
+                    guided by the position of the device. After testing the
+                    gyroscope interaction on as many phones as we could get our
+                    hands on, we came to the unfortunate realization that
+                    standardization of accelerometer/gyro data is a complete
+                    disaster.<a target="_blank" href=" "> Gyronorm.js</a>
+                    was a savior there.
+                  </p>
+
+                  <h2>Technologies</h2>
+                  <p>
+                    Even though the website consists of only two pages, it was
+                    important to still implement a CMS to keep everything easy
+                    to manage and maintain. We decided to stick to<a
+                      target="_blank"
+                      href=" "
+                    >
+                      Wordpress</a
+                    >, as Climate’s team was already familiar with the software.
+                  </p>
+                  <p>
+                    It was extremely important that Climate’s work be accessed
+                    easily and without error. To achieve this, we used<a
+                      target="_blank"
+                      href=" "
+                    >
+                      Plyr</a
+                    >
+                    alongside<a target="_blank" href=" "> Vimeo</a>
+                    hosted videos, thus combining a nice custom-made player
+                    interface with the highest quality streaming performance
+                    available.
+                  </p>
+                  <p>
+                    All of the page animations and transitions were created
+                    with<a target="_blank" href=" "> GSAP</a> alongside<a
+                      target="_blank"
+                      href=" "
+                    >
+                      BarbaJS</a
+                    >. This approach allowed us to avoid reloading each page,
+                    keeping the transition between the Home and Info pages very
+                    smooth. We then used<a target="_blank" href=" "> Webpack</a>
+                    to build the production assets.
+                  </p>
+                  <h2>Company Info</h2>
+                  <p>
+                    Platoon helps new brands start up and old ones start over.
+                    <br /><a target="_blank" href=" ">platoon.studio</a> /<a
+                      target="_blank"
+                      href=" "
+                    >
+                      @platoonstudio
+                    </a>
+                  </p>
+                  <p>
+                    Fabio Carretti is an award-winning Creative Developer based
+                    in Italy.<br /><a target="_blank" href=" ">crrtt.com</a> /<a
+                      target="_blank"
+                      href=" "
+                    >
+                      @FabioCarretti</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="block pt-0" id="block-related">
+            <div class="inner width-4">
+              <div class="box-heading">
+                <h4 class="heading-underline style-row">Related Articles</h4>
+              </div>
+              <div class="grid js-grid">
+                <ul class="list-items list-flex js-elements-container">
+                  <li class="col-6 js-collectable">
+                    <div class="box-item">
+                      <figure class="rollover">
+                        <a href="profile.html">
+                          <div class="box-photo">
+                            <img
+                              width="417"
+                              height="298"
+                              src="https://assets.awwwards.com/awards/images/2019/10/Crafted thumbnail.jpg"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                            />
+                          </div>
+                        </a>
+
+                        <div class="hover-item top">
+                          <span class="js-options-collectable"></span>
+
+                          <span
+                            class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                          >
+                            <i class="fal fa-heart"></i>
+                            <span class="number">
+                              14
+                            </span>
+                          </span>
+                          <strong class="bt-item bt-default js-collect"
+                            >Collect</strong
+                          >
+                        </div>
+                      </figure>
+
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a href=" ">Case Study: Crafted by BASIC®</a>
+                            </h3>
+                          </div>
+                          <div class="row row-2col">
+                            <div class="box-left">
+                              Added to
+                              <strong>
+                                <a href=" ">Web Design</a>
+                              </strong>
+                            </div>
+                            <div class="box-right">October 7, 2019</div>
+                          </div>
+                        </div>
+                        <div class="footer style2">
+                          <div class="box-left">
+                            <div class="box-byuser js-tooltip-user">
+                              <div class="item js-user">
+                                <a href=" ">
+                                  <img
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/360/5de4c72a4804d134844044.png"
+                                    width="27"
+                                    height="27"
+                                    alt="BASIC®"
+                                    class="lazy lazy-loaded"
+                                  />
+                                </a>
+                              </div>
+                              <div class="by">
+                                by
+                                <strong
+                                  ><a href="/basic/" class="text-black"
+                                    >BASIC®</a
+                                  ></strong
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-right"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="col-6 js-collectable">
+                    <div class="box-item">
+                      <figure class="rollover">
+                        <a href=" ">
+                          <div class="box-photo">
+                            <img
+                              width="417"
+                              height="298"
+                              src="https://assets.awwwards.com/awards/images/2019/09/Nars-case-study-thumbnail.jpg"
+                              alt=" "
+                              class="lazy lazy-loaded"
+                            />
+                          </div>
+                        </a>
+
+                        <div class="hover-item top">
+                          <span class="js-options-collectable"></span>
+
+                          <span
+                            class="bt-item bt-default bt-likeit js-bt-like js-collect-like"
+                          >
+                            <i class="fal fa-heart"></i>
+                            <span class="number">
+                              08
+                            </span>
+                          </span>
+                          <strong class="bt-item bt-default js-collect"
+                            >Collect</strong
+                          >
+                        </div>
+                      </figure>
+
+                      <div class="box-info">
+                        <div class="content">
+                          <div class="row">
+                            <h3>
+                              <a href="article.html"
+                                >NARS The O Experience: Case Study</a
+                              >
+                            </h3>
+                          </div>
+                          <div class="row row-2col">
+                            <div class="box-left">
+                              Added to
+                              <strong>
+                                <a href=" ">Web Design</a>
+                              </strong>
+                            </div>
+                            <div class="box-right">September 9, 2019</div>
+                          </div>
+                        </div>
+                        <div class="footer style2">
+                          <div class="box-left">
+                            <div class="box-byuser js-tooltip-user">
+                              <div class="item js-user">
+                                <a href=" ">
+                                  <img
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                    width="27"
+                                    height="27"
+                                    alt=" "
+                                    class="lazy lazy-loaded"
+                                  />
+                                </a>
+                              </div>
+                              <div class="by">
+                                by
+                                <strong
+                                  ><a href=" " class="text-black"
+                                    >Awwwards</a
+                                  ></strong
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-right"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href=" " class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="c" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+            <div class="box-right">
+              <div class="headline">
+                Next Conferences
+                <i class="fal fa-calendar"></i>
+                <strong><a href="" class="link-1">Coming soon</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li><a rel="nofollow" href="">Contact Us</a></li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="">Cookies Policy</a>
+                </li>
+                <li><a rel="nofollow" href="">Legal Terms</a></li>
+                <li>
+                  <a rel="nofollow" href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick="openDropDown(event)">
+                      English
+                      <img src="./img/icons/uk.png" alt="" />
+                    </div>
+
+                    <ul class="options">
+                      <li
+                        lang="en"
+                        class="js-change-locale active"
+                        data-locale="en"
+                      >
+                        English
+                        <img src="./img/icons/uk.png" alt="" />
+                      </li>
+                      <li lang="es" class="js-change-locale" data-locale="es">
+                        Español - Spanish
+                        <img src="./img/icons/spain.png" alt="" />
+                      </li>
+                      <li lang="ko" class="js-change-locale" data-locale="ko">
+                        한국어 - Korean
+                        <img src="./img/icons/south-korea.png" alt="" />
+                      </li>
+                      <li lang="zh" class="js-change-locale" data-locale="zh">
+                        中國 - Chinese
+                        <img src="./img/icons/china.png" alt="" />
+                      </li>
+                      <li lang="ja" class="js-change-locale" data-locale="ja">
+                        日本語 - Japanese
+                        <img src="./img/icons/japan.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Private Cloud by
+                <strong
+                  ><a
+                    href="https://www.stackscale.com/"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    >Stackscale</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
