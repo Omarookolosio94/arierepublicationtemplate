@@ -1,4 +1,7 @@
 var sideNav = document.getElementById('sideNav');
+var registerForm = document.getElementById('tab-register-form');
+var LoginForm = document.getElementById('tab-login-form');
+var forgetForm = document.getElementById('tab-forgot');
 var content = document.getElementById('content');
 var btMenu = document.getElementById('btMenu');
 var toggleHeading = document.getElementById('toggle-heading');
@@ -7,6 +10,7 @@ var headerTop = document.querySelector('.header-top');
 var dropDownItem = document.querySelector('.option-active');
 var dropDown = document.querySelector('.box-dropdown');
 var shareLinks = document.querySelector('.openShareLinks');
+var modalBox = document.querySelector('.box-lightbox');
 var selectLang = document.querySelector('.select');
 var body = document.body;
 
@@ -40,11 +44,44 @@ toggleInfo = (e) => {
 
 openShareLink = () => {
   shareLinks.classList.toggle('active');
-  console.log(shareLinks);
 };
 
 closeDropDown = () => {
   dropDown.classList.remove('open');
+};
+
+openLogin = () => {
+  body.classList.add('hidden-y');
+  modalBox.classList.add('open');
+};
+
+toggleForms = (evt) => {
+  evt.preventDefault();
+  if (evt.target.classList.contains('js-register')) {
+    LoginForm.style.display = 'none';
+    forgetForm.style.display = 'none ';
+    registerForm.style.display = 'block';
+    console.log('register', registerForm);
+  } else if (evt.target.classList.contains('js-tab-login')) {
+    registerForm.style.display = 'none';
+    forgetForm.style.display = 'none';
+    LoginForm.style.display = 'block';
+    console.log('login', LoginForm);
+  } else if (evt.target.classList.contains('js-forgot-password')) {
+    LoginForm.style.display = 'none';
+    registerForm.style.display = 'none';
+    forgetForm.style.display = 'block';
+    console.log('forget', forgetForm);
+  }
+};
+
+//js-register
+//js-tab-login
+//js-forgot-password
+
+closeLogin = () => {
+  body.classList.remove('hidden-y');
+  modalBox.classList.remove('open');
 };
 
 closeSelectLang = () => {

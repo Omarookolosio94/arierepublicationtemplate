@@ -21,7 +21,7 @@
             </div>
           </div>
           <ul class="navlinks">
-            <li>
+            <li onclick="openLogin()">
               <span class="nav-item">Register/Log In</span>
             </li>
             <li>
@@ -138,8 +138,8 @@
             <!-- Login Action -->
             <div class="item login">
               <span>Are you a member?</span>
-              <strong
-                ><a class="text-black open_login" href="/login"
+              <strong onclick="openLogin()"
+                ><a class="text-black open_login" href="#" role="button"
                   >Register / log in</a
                 ></strong
               >
@@ -1685,10 +1685,10 @@
     </div>
 
     <div class="box-lightbox" style="z-index: 100;">
-      <div class="bt-close js-lightbox-close"></div>
+      <div class="bt-close js-lightbox-close" onclick="closeLogin()"></div>
       <div class="box-content-login">
         <div class="box-login">
-          <div class="tab-form js-tab-form" id="tab-login-form">
+          <div class="tab-form js-tab-form active" id="tab-login-form">
             <div class="form">
               <div class="box-section">
                 <div class="header">
@@ -1700,6 +1700,7 @@
                       Not a member yet?
                       <strong
                         class="text-green cursor-pointer js-tab js-register"
+                        onclick="toggleForms(event)"
                         >Register now</strong
                       >
                     </h3>
@@ -1736,8 +1737,8 @@
                     </button>
                   </p>
                   <p align="center">
-                    <strong
-                      ><a class="link-2 js-forgot-password" href=" "
+                    <strong onclick="toggleForms(event)"
+                      ><a class="link-2 js-forgot-password" href=""
                         >Forgot your password</a
                       ></strong
                     >
@@ -1794,162 +1795,171 @@
               <div class="spinner"></div>
             </div>
           </div>
-          <div style="display: none;">
-            <div class="tab-form js-tab-form active" id="tab-register-form">
-              <div class="form">
-                <div class="box-section">
-                  <div class="header">
-                    <div class="box-left">
-                      <h3><strong>Register with</strong></h3>
-                    </div>
-                    <div class="box-right">
-                      <h3>
-                        Are you a member?
-                        <strong
-                          class="text-green cursor-pointer js-tab-login"
-                          data-tab="tab-login-form"
-                          ><a href=" ">Login now</a></strong
-                        >
-                      </h3>
-                    </div>
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-register-form"
+            style="display: none;"
+          >
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <div class="box-left">
+                    <h3><strong>Register with</strong></h3>
                   </div>
-                  <div class="bts">
-                    <a href=" " class="bt-connect bt-google">
-                      <svg viewBox="0 0 400 400" class="ico-svg">
-                        <path
-                          d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
-                          fill="#FFF"
-                        ></path>
-                        <path
-                          d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
-                          fill="#EA4335"
-                        ></path>
-                        <path
-                          d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
-                          fill="#FBBC05"
-                        ></path>
-                        <path
-                          d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
-                          fill="#4285F4"
-                        ></path>
-                        <path
-                          d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
-                          fill="#34A853"
-                        ></path>
-                      </svg>
-                      <span>Google</span>
-                    </a>
-
-                    <a href=" " class="bt-connect bt-twitter">
-                      <i class="fab fa-twitter"></i>
-                      <span>Twitter</span>
-                    </a>
-
-                    <a href=" " class="bt-connect bt-facebook">
-                      <i class="fab fa-facebook-f"></i>
-                      <span>Facebook</span>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="box-section">
-                  <div class="header">
-                    <h3><strong>Or with your E-mail</strong></h3>
-                  </div>
-                  <form
-                    name="register"
-                    method="post"
-                    class="register_form"
-                    novalidate="novalidate"
-                  >
-                    <p></p>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        id="register_username"
-                        required="required"
-                        class="text-input"
-                        placeholder="Username"
-                      />
-                      <div class="msg"></div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        id="register_email"
-                        required="required"
-                        class="text-input"
-                        placeholder="E-mail"
-                      />
-                      <div class="msg"></div>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <div class="form-group">
-                      <input
-                        type="password"
-                        id="register_plainPassword_first"
-                        required="required"
-                        class="text-input js-password js-password-check"
-                        placeholder="Password"
-                      />
-                      <div class="msg"></div>
-                    </div>
-                    <p></p>
-                    <p class="hidden" id="repeat-pass"></p>
-                    <div class="form-group">
-                      <input
-                        type="password"
-                        id="register_plainPassword_second"
-                        name="register[plainPassword][second]"
-                        required="required"
-                        class="text-input"
-                        placeholder="Repeat Password"
-                      />
-                      <div class="msg"></div>
-                    </div>
-                    <p></p>
-                    <p class="row"></p>
-                    <div class="form-group check">
-                      <input
-                        type="checkbox"
-                        id="register_termsAndConditions"
-                        value="1"
-                      />
-                      <label for="register_termsAndConditions"
-                        >I accept the
-                        <strong
-                          ><a href="/terms/" target="_blank"
-                            >Terms and Conditions</a
-                          ></strong
-                        >
-                        and
-                        <strong
-                          ><a href="/privacy-policy/" target="_blank"
-                            >Privacy Policy</a
-                          ></strong
-                        ></label
+                  <div class="box-right">
+                    <h3>
+                      Are you a member?
+                      <strong class="text-green cursor-pointer"
+                        ><a
+                          href=" "
+                          class="js-tab-login"
+                          onclick="toggleForms(event)"
+                          >Login now</a
+                        ></strong
                       >
-
-                      <div class="msg"></div>
-                    </div>
-                    <p></p>
-
-                    <p>
-                      <input
-                        class="button text-uppercase"
-                        type="submit"
-                        value="Create your Account"
-                      />
-                    </p>
-                  </form>
+                    </h3>
+                  </div>
                 </div>
+                <div class="bts">
+                  <a href=" " class="bt-connect bt-google">
+                    <svg viewBox="0 0 400 400" class="ico-svg">
+                      <path
+                        d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
+                        fill="#FFF"
+                      ></path>
+                      <path
+                        d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
+                        fill="#34A853"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Or with your E-mail</strong></h3>
+                </div>
+                <form
+                  name="register"
+                  method="post"
+                  class="register_form"
+                  novalidate="novalidate"
+                >
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_username"
+                      required="required"
+                      class="text-input"
+                      placeholder="Username"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_email"
+                      required="required"
+                      class="text-input"
+                      placeholder="E-mail"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_first"
+                      required="required"
+                      class="text-input js-password js-password-check"
+                      placeholder="Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="hidden" id="repeat-pass"></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_second"
+                      name="register[plainPassword][second]"
+                      required="required"
+                      class="text-input"
+                      placeholder="Repeat Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="row"></p>
+                  <div class="form-group check">
+                    <input
+                      type="checkbox"
+                      id="register_termsAndConditions"
+                      value="1"
+                    />
+                    <label for="register_termsAndConditions"
+                      >I accept the
+                      <strong
+                        ><a href="/terms/" target="_blank"
+                          >Terms and Conditions</a
+                        ></strong
+                      >
+                      and
+                      <strong
+                        ><a href="/privacy-policy/" target="_blank"
+                          >Privacy Policy</a
+                        ></strong
+                      ></label
+                    >
+
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+
+                  <p>
+                    <input
+                      class="button text-uppercase"
+                      type="submit"
+                      value="Create your Account"
+                    />
+                  </p>
+                </form>
               </div>
             </div>
           </div>
-          <div class="tab-form js-tab-form active" id="tab-forgot">
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-forgot"
+            style="display: none;"
+          >
             <div class="form">
               <div class="box-section">
                 <div class="header">
@@ -1999,7 +2009,7 @@
                     <p align="center">
                       <strong
                         class="link-2 cursor-pointer js-tab-login"
-                        data-tab="tab-login-form"
+                        onclick="toggleForms(event)"
                         >Back</strong
                       >
                     </p>
