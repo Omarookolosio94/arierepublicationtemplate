@@ -52,6 +52,10 @@ body.ht-visible .wrapper {
   padding-top: 0;
 }
 
+body.hidden-y {
+  overflow-y: hidden;
+}
+
 .nav-sidebar-open .wrapper {
   position: fixed;
   transform: translateX(320px);
