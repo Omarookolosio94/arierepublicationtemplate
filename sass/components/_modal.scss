@@ -179,3 +179,18 @@
     }
   }
 }
+
+@media (max-width: 468px) {
+  .box-login .form {
+    width: 100%;
+  }
+
+  .box-login .header {
+    flex-direction: column;
+  }
+
+  .box-login .header .box-right {
+    order: -1;
+    margin-bottom: 15px;
+  }
+}
