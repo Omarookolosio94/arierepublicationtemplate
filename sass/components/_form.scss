@@ -5,6 +5,33 @@
   font-weight: bold;
 }
 
+.breadcrumb-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+  font-weight: 300;
+  overflow: hidden;
+
+  li {
+    width: 33.333%;
+    padding: 0 0 0 2px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  li span {
+    display: block;
+    padding: 15px 0 0 40px;
+    border-top: 8px solid #202121;
+    color: #202121;
+  }
+}
+
+.breadcrumb-submit li.active a,
+.breadcrumb-submit li.active span {
+  font-weight: bold;
+}
+
 .box-form-fields {
   width: 100%;
   margin-bottom: 30px;
@@ -90,6 +117,10 @@
   }
 }
 
+textarea.text-input {
+  padding-top: 15px;
+}
+
 .text-input:focus {
   outline: none;
   background-color: #fff;
@@ -147,6 +178,112 @@
 
 .width-full {
   width: 100%;
+}
+
+.box-input-file {
+  border: 1px solid #dbe0df;
+  overflow: hidden;
+}
+
+.box-input-file .input-file {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.box-input-file label {
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box-input-file label strong {
+  width: 30%;
+  height: 60px;
+  padding: 0 15px;
+  line-height: 60px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #49c5b6;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.box-input-file label *:not(svg) {
+  display: block;
+  float: left;
+  height: 50px;
+  overflow: hidden;
+}
+
+.box-add-image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-input-file.style2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.box-input-file.style2 label {
+  overflow: initial;
+}
+
+.box-input-file.style2 .photo {
+  position: relative;
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.box-input-file.style2 .photo img {
+  float: left;
+}
+
+.box-input-file.style2 .photo strong {
+  height: 40px;
+  line-height: 40px;
+}
+
+.box-input-file.style2 label strong {
+  width: 100%;
+}
+
+.box-input-file.style2 .requirements {
+  margin-top: auto;
+}
+
+.box-input-file.style2 .requirements ul {
+  line-height: normal;
+  font-size: 14px;
+  color: #bdc1c0;
+}
+.box-input-file.style2 .requirements ul li {
+  padding: 1px 0;
+}
+
+.form-group.is-image-avatar .box-add-image {
+  padding: 15px;
+  border: 1px solid #dbe0df;
+}
+
+.form-group.is-image-avatar .photo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 1024px) {
+  .breadcrumb-submit li a,
+  .breadcrumb-submit li span {
+    padding-left: 0;
+  }
 }
 
 @include mediaMd {
