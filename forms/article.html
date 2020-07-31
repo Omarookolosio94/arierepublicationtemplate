@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ariere Publication- Article Form</title>
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../img/icons/arlogobar.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="../fa-light/light.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body class="home ht-visible">
+    <div class="wrapper">
+      <div class="side-nav" id="sideNav">
+        <div class="top">
+          <div class="header">
+            <div class="close-btn" onclick="closeSideNav()">
+              <span>Close</span>
+              <i class="fal fa-times"></i>
+            </div>
+          </div>
+          <ul class="navlinks">
+            <li class="dropdown has-mobile">
+              <span class="nav-item">okolosio-oghene</span>
+              <ul style="display: block;">
+                <li><a href="../profile.html" class="nav-link">Profile</a></li>
+                <li><a href="profile.html" class="nav-link">Settings </a></li>
+
+                <li class="logout">
+                  <a href="../index.html" class="nav-link">
+                    Logout
+                    <div class="icon">
+                      <i class="fal fa-sign-out-alt"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li onclick="openLogin()">
+              <span class="nav-item">Register/Log In</span>
+            </li> -->
+            <li>
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="../profile.html" class="nav-link">Profile</a>
+            </li>
+            <li>
+              <a href="../profiles.html" class="nav-link"
+                >Professional Directory</a
+              >
+            </li>
+
+            <li>
+              <a href="../category.html" class="nav-link" data-count="20"
+                >Publications</a
+              >
+            </li>
+            <li>
+              <a href="../categories.html" class="nav-link" data-count="20"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a href="" class="nav-link"
+                >Jobs/ Talent
+
+                <span class="badget">BETA</span>
+              </a>
+            </li>
+            <li>
+              <a href="../about.html" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-bottom">
+          <div class="box-version">
+            <span class="box-version-text">Activate black option</span>
+            <div class="input-check-toggle check-small">
+              <input id="version-color" type="checkbox" class="js-dark" />
+              <label for="version-color">
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header id="header">
+        <!-- Header Top with Social Links -->
+        <div class="header-top">
+          <div class="box-left">
+            <div class="item">
+              <span
+                class="link-1 js-nav-main js-nav-lang"
+                data-menu-id="menu-lang"
+              >
+                ENGLISH
+              </span>
+            </div>
+          </div>
+          <div class="box-center">
+            <h1 class="slogan">
+              The Road To Becoming Your Own Publisher Begins Now
+            </h1>
+          </div>
+          <div class="box-right">
+            <ul class="list-social item">
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Main Header  -->
+        <div class="header-main">
+          <div class="box-left">
+            <div
+              class="item bt-menu js-nav-main"
+              data-menu-id="menu-main"
+              onclick="openSideNav()"
+              id="btMenu"
+            >
+              <div class="ico-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span class="has-tablet">MENU</span>
+            </div>
+          </div>
+          <div class="box-right">
+            <div
+              class="item bt-search"
+              id="js-search-container"
+              onclick="openSearch()"
+            >
+              <i class="fal fa-search"></i>
+            </div>
+
+            <div
+              id="js-user-details"
+              class="item logged has-tablet"
+              data-user='{"username":"okolosio-oghenemaro","id":948576,"displayName":"okolosio-oghenemaro"}'
+            >
+              <a
+                href="../profile.html"
+                class="js-has-name text-black text-uppercase profile-name"
+                >okolosio-oghene</a
+              >
+              <div class="bt-dropdown bt-menu-user">
+                <figure class="avatar">
+                  <img
+                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                    alt="okolosio-oghenemaro"
+                    width="32"
+                    height="32"
+                  />
+                </figure>
+                <div class="ico-menu">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <ul>
+                  <li><a href="../profile.html">Profile</a></li>
+                  <li>
+                    <a href="/okolosio-oghenemaro/collections/">Collections</a>
+                  </li>
+
+                  <li><a href="profile.html">Settings </a></li>
+
+                  <li class="logout">
+                    <a href="../index.html">
+                      Logout
+                      <div class="icon">
+                        <i class="fal fa-sign-out"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item has-tablet" id="bt-submit">
+              <a href="article.html" class="button button-large">
+                <span>SUBMIT YOUR PUBLICATIONS!</span>
+              </a>
+            </div>
+          </div>
+          <div class="logo-header">
+            <a href="../index.html" aria-label="Awwwards">
+              <span>
+                <img src="../img/icons/arlogo.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- End of Main header -->
+
+        <!-- Search Component -->
+
+        <div class="box-search" id="box-search">
+          <div class="box-left">
+            <div class="box-input">
+              <div class="item ico-search">
+                <i class="fal fa-search"></i>
+              </div>
+
+              <input
+                type="text"
+                id="search-text"
+                placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)"
+                data-placeholder-mobile="SEARCH FOR INSPIRATION"
+                autocomplete="off"
+                class="search-input js-search-input"
+                value=""
+              />
+              <div class="search-info">
+                <div class="row default active">
+                  <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-right" onclick="closeSearch()">
+            <div class="bt-close js-search-close"></div>
+          </div>
+        </div>
+        <!-- End of Search Component -->
+      </header>
+
+      <section id="content">
+        <div class="content-view">
+          <div class="block js-purchase-type" data-type="submission">
+            <div class="inner width-2">
+              <div class="head-box-form">
+                <h1 class="heading-large horizontal-center">
+                  Standard Submission
+                </h1>
+              </div>
+
+              <ul class="breadcrumb-submit">
+                <li class="active">
+                  <span><strong>Step 1</strong>. Complete information</span>
+                </li>
+
+                <li class="">
+                  <span><strong>Step 2</strong>. Log in or Register</span>
+                </li>
+
+                <li>
+                  <span><strong>Step 3</strong>. Review &amp; Check out</span>
+                </li>
+              </ul>
+
+              <form
+                name="standard_submission"
+                method="post"
+                novalidate="novalidate"
+              >
+                <div class="box-form-fields js-forms">
+                  <ul>
+                    <li>
+                      <div class="row left">
+                        <label
+                          for="standard_submission_submission_sitename"
+                          class="asterisk-required"
+                          ><strong>Sitename</strong></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <div class="form-group has-info">
+                          <input
+                            type="text"
+                            id="standard_submission_submission_sitename"
+                            name="standard_submission[submission][sitename]"
+                            required="required"
+                            class="text-input js-validate_characters"
+                            data-msg="form.characters_remaining"
+                            data-max="30"
+                          />
+                          <div class="msg" style="display: block;">
+                            30 characters remaining.
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row left">
+                        <label
+                          for="standard_submission_submission_url"
+                          class="asterisk-required"
+                          ><strong>URL</strong></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            id="standard_submission_submission_url"
+                            name="standard_submission[submission][url]"
+                            required="required"
+                            class="text-input js-validate_url"
+                            data-msg="form.add_a_url_with_http"
+                            data-validator="url"
+                            inputmode="url"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row left">
+                        <label
+                          for="standard_submission_submission_description"
+                          class="asterisk-required"
+                          ><strong>Description</strong></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <div class="form-group">
+                          <textarea
+                            id="standard_submission_submission_description"
+                            name="standard_submission[submission][description]"
+                            required="required"
+                            data-msg="form.characters_remaining_no_html"
+                            class="text-input js-validate_characters"
+                            data-max="185"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="box-form-fields js-forms">
+                  <ul>
+                    <li>
+                      <div class="row left">
+                        <label
+                          for="standard_submission_submission_designBy"
+                          class="asterisk-required"
+                          ><strong>Design by</strong></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            id="standard_submission_submission_designBy"
+                            name="standard_submission[submission][designBy]"
+                            required="required"
+                            class="text-input js-validate_characters"
+                            data-msg="form.characters_remaining"
+                            placeholder="Author name"
+                            data-max="30"
+                            value="okolosio-oghenemaro"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row left">
+                        <label
+                          for="standard_submission_submission_designerUrl"
+                          class="asterisk-required"
+                          ><strong>Design URL</strong></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            id="standard_submission_submission_designerUrl"
+                            name="standard_submission[submission][designerUrl]"
+                            required="required"
+                            class="text-input js-validate_url"
+                            data-msg="form.add_a_url_with_http"
+                            placeholder="Designer url"
+                            inputmode="url"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row left">
+                        <label for="standard_submission_submission_twitter"
+                          ><strong>Twitter</strong> <em>(optional)</em></label
+                        >
+                      </div>
+                      <div class="row right">
+                        <input
+                          type="text"
+                          id="standard_submission_submission_twitter"
+                          name="standard_submission[submission][twitter]"
+                          class="text-input"
+                          placeholder="Twitter"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="box-form-fields">
+                  <ul>
+                    <li>
+                      <div class="row left">
+                        <label><strong>Collaborators</strong></label>
+                      </div>
+                      <div class="row right">
+                        <div class="form-group">
+                          <div class="form-collaborator">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="js-search-user text-input"
+                                placeholder="Author name"
+                              />
+                              <div class="box-users-autocomplete">
+                                <ul class="users_suggested"></ul>
+                              </div>
+                            </div>
+                            <div class="box-users-likes">
+                              <ul class="list-users"></ul>
+                            </div>
+                          </div>
+                          <div
+                            id="standard_submission_submission_credits"
+                            class="collaborators hidden"
+                            data-prototype='            <input type="text" id="standard_submission_submission_credits___name___user" name="standard_submission[submission][credits][__name__][user]" class="user_selector" />
+'
+                          ></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row left">
+                        <label for="user_settings_photo"
+                          ><strong>Avatar</strong></label
+                        >
+                      </div>
+                      <div
+                        class="form-group row right js-container-image is-image-avatar"
+                      >
+                        <div class="box-input-file style2 box-add-image">
+                          <div class="photo">
+                            <img
+                              class="js-preview-photo hidden"
+                              src="https://assets.awwwards.com/assets/images/pages/user/avatar.svg"
+                              width="100"
+                              height="100"
+                              alt=""
+                            />
+
+                            <input
+                              type="file"
+                              id="user_settings_photo"
+                              name="user_settings[photo]"
+                              class="input-file inputfile js-uploadphoto"
+                              data-maxsize="400"
+                            />
+
+                            <label for="user_settings_photo">
+                              <strong>UPLOAD</strong>
+                            </label>
+                          </div>
+
+                          <div class="requirements">
+                            <ul>
+                              <li class="js-filename">
+                                <span
+                                  >Recommended size: 400x400px.<br />400KB
+                                  max.</span
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row last">
+                        <div class="input-check italic">
+                          <input
+                            type="checkbox"
+                            id="user_settings_listsSubscribed_0"
+                            name="user_settings[listsSubscribed][]"
+                            value="aX7dzkTyiZXymfGrbpAtRA"
+                          />
+                          <label for="user_settings_listsSubscribed_0"
+                            >I would like to receive the Awwwards
+                            newsletter</label
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <p>
+                  <input
+                    type="submit"
+                    value="NEXT STEP 2/3"
+                    class="button large bold width-full"
+                  />
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="box-top">
+          <div class="inner">
+            <div class="box-left">
+              <h2 class="headline slogan not-mobile">
+                The awards for design, creativity and innovation on the Internet
+              </h2>
+              <ul class="menu-footer">
+                <li class="directory not-mobile">
+                  <a href="" data-count="2">Directory</a>
+                </li>
+                <li class="jobs not-mobile">
+                  <a href=" " data-count="5">Jobs</a>
+                </li>
+                <li><a href="../about.html" class="item">About Us</a></li>
+                <li><a href="" class="item">Winners</a></li>
+                <li><a href="" class="item">Nominees</a></li>
+                <li><a href=" " class="item">Blog</a></li>
+              </ul>
+              <p class="follow">
+                <strong>Follow us</strong>
+                <a rel="noopener" href=" " target="_blank">Twitter</a>
+                <a rel="noopener" href="" target="_blank">Facebook</a>
+                <a rel="noopener" href="" target="_blank">Youtube</a>
+                <a rel="noopener" href=" " target="_blank">Instagram</a>
+                <a rel="noopener" href=" " target="_blank">Linkedin</a>
+              </p>
+            </div>
+            <div class="box-right">
+              <div class="headline">
+                Next Conferences
+                <i class="fal fa-calendar"></i>
+                <strong><a href="" class="link-1">Coming soon</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <div class="inner">
+            <div class="box-left">
+              <ul class="menu-footer">
+                <li>
+                  <a rel="nofollow" href="../others/contact.html">Contact Us</a>
+                </li>
+                <li><a rel="nofollow" href="">F.A.Q</a></li>
+                <li>
+                  <a rel="nofollow" href="../others/cookies.html"
+                    >Cookies Policy</a
+                  >
+                </li>
+                <li>
+                  <a rel="nofollow" href="../others/legal.html">Legal Terms</a>
+                </li>
+                <li>
+                  <a rel="nofollow" href="../others/privacy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <div class="box-select-lang js-box-select-locales">
+                    <div class="select" onclick="openDropDown(event)">
+                      English
+                      <img src="../img/icons/uk.svg" alt="" />
+                    </div>
+
+                    <ul class="options">
+                      <li
+                        lang="en"
+                        class="js-change-locale active"
+                        data-locale="en"
+                      >
+                        English
+                        <img src="../img/icons/uk.svg" alt="" />
+                      </li>
+                      <li lang="es" class="js-change-locale" data-locale="es">
+                        Español - Spanish
+                        <img src="../img/icons/spain.svg" alt="" />
+                      </li>
+                      <li lang="ko" class="js-change-locale" data-locale="ko">
+                        한국어 - Korean
+                        <img src="../img/icons/southkorea.svg" alt="" />
+                      </li>
+                      <li lang="zh" class="js-change-locale" data-locale="zh">
+                        中國 - Chinese
+                        <img src="../img/icons/china.svg" alt="" />
+                      </li>
+                      <li lang="ja" class="js-change-locale" data-locale="ja">
+                        日本語 - Japanese
+                        <img src="../img/icons/japan.svg" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <p>
+                Private Cloud by
+                <strong
+                  ><a href=" " target="_blank" rel="noopener nofollow"
+                    >Stackscale</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="box-lightbox" style="z-index: 100;">
+      <div class="bt-close js-lightbox-close" onclick="closeLogin()"></div>
+      <div class="box-content-login">
+        <div class="box-login">
+          <div class="tab-form js-tab-form active" id="tab-login-form">
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <div class="box-left">
+                    <h3><strong>Sign in to continue</strong></h3>
+                  </div>
+                  <div class="box-right">
+                    <h3>
+                      Not a member yet?
+                      <strong
+                        class="text-green cursor-pointer js-tab js-register"
+                        onclick="toggleForms(event)"
+                        >Register now</strong
+                      >
+                    </h3>
+                  </div>
+                </div>
+
+                <form method="post" novalidate="">
+                  <p>
+                    <label class="tip-form"
+                      ><input
+                        class="text-input"
+                        placeholder="Email or Username"
+                        type="text"
+                    /></label>
+                  </p>
+                  <p>
+                    <label class="tip-form"
+                      ><input
+                        class="text-input"
+                        placeholder="Password"
+                        type="password"
+                    /></label>
+                  </p>
+                  <p class="check">
+                    <input id="remember_me" type="checkbox" />
+                    <label for="remember_me">Keep me logged in</label>
+                  </p>
+                  <p>
+                    <button
+                      type="submit"
+                      class="button js-bt-loading text-uppercase"
+                    >
+                      <span class="bt-content">Login now</span>
+                    </button>
+                  </p>
+                  <p align="center">
+                    <strong onclick="toggleForms(event)"
+                      ><a class="link-2 js-forgot-password" href=""
+                        >Forgot your password</a
+                      ></strong
+                    >
+                  </p>
+                </form>
+              </div>
+
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Or sign in with</strong></h3>
+                </div>
+                <div class="bts">
+                  <a href=" " class="bt-connect bt-google">
+                    <svg viewBox="0 0 400 400" class="ico-svg">
+                      <path
+                        d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
+                        fill="#FFF"
+                      ></path>
+                      <path
+                        d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
+                        fill="#34A853"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-msg hidden">
+            <div class="box-loading style3 open">
+              <div class="spinner"></div>
+            </div>
+          </div>
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-register-form"
+            style="display: none;"
+          >
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <div class="box-left">
+                    <h3><strong>Register with</strong></h3>
+                  </div>
+                  <div class="box-right">
+                    <h3>
+                      Are you a member?
+                      <strong class="text-green cursor-pointer"
+                        ><a
+                          href=" "
+                          class="js-tab-login"
+                          onclick="toggleForms(event)"
+                          >Login now</a
+                        ></strong
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <div class="bts">
+                  <a href=" " class="bt-connect bt-google">
+                    <svg viewBox="0 0 400 400" class="ico-svg">
+                      <path
+                        d="M142.9 24.2C97.6 39.7 59 73.6 37.5 116.5 30 131.3 24.6 147 21.3 163.3c-8.2 40.4-2.5 83.5 16.1 120.3 12.1 24 29.5 45.4 50.5 62.1 19.9 15.8 43 27.6 67.6 34.1 31 8.3 64 8.1 95.2 1 28.2-6.5 54.9-20 76.2-39.6 22.5-20.7 38.6-47.9 47.1-77.2 9.3-31.9 10.5-66 4.7-98.8h-175v72.6h101.4c-3.9 23.2-17.7 44.4-37.2 57.5-12.3 8.3-26.4 13.6-41 16.2-14.6 2.5-29.8 2.8-44.4-.1-14.9-3-29-9.2-41.4-17.9-19.8-13.9-34.9-34.2-42.6-57.1-7.9-23.3-8-49.2 0-72.4 5.6-16.4 14.8-31.5 27-43.9 15-15.4 34.5-26.4 55.6-30.9 18-3.8 37-3.1 54.6 2.2 15 4.5 28.8 12.8 40.1 23.6L310 80.8c6-6.1 12.3-12 18.1-18.3-17.3-16-37.7-28.9-59.9-37.1-40-14.8-85-15.1-125.3-1.2z"
+                        fill="#FFF"
+                      ></path>
+                      <path
+                        d="M142.9 24.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M21.4 163.2c3.3-16.2 8.7-32 16.2-46.8 20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3-18.8-36.7-24.5-79.8-16.3-120.2z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M203.7 165.1h175c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H203.6c.1-24.2.1-48.4.1-72.6z"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M37.5 283.5c20.3-15.7 40.6-31.5 60.9-47.3 7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62z"
+                        fill="#34A853"
+                      ></path>
+                    </svg>
+                    <span>Google</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </a>
+
+                  <a href=" " class="bt-connect bt-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Or with your E-mail</strong></h3>
+                </div>
+                <form
+                  name="register"
+                  method="post"
+                  class="register_form"
+                  novalidate="novalidate"
+                >
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_username"
+                      required="required"
+                      class="text-input"
+                      placeholder="Username"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="register_email"
+                      required="required"
+                      class="text-input"
+                      placeholder="E-mail"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_first"
+                      required="required"
+                      class="text-input js-password js-password-check"
+                      placeholder="Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="hidden" id="repeat-pass"></p>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      id="register_plainPassword_second"
+                      name="register[plainPassword][second]"
+                      required="required"
+                      class="text-input"
+                      placeholder="Repeat Password"
+                    />
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+                  <p class="row"></p>
+                  <div class="form-group check">
+                    <input
+                      type="checkbox"
+                      id="register_termsAndConditions"
+                      value="1"
+                    />
+                    <label for="register_termsAndConditions"
+                      >I accept the
+                      <strong
+                        ><a href="../others/legal.html" target="_blank"
+                          >Terms and Conditions</a
+                        ></strong
+                      >
+                      and
+                      <strong
+                        ><a href="../others/privacy.html" target="_blank"
+                          >Privacy Policy</a
+                        ></strong
+                      ></label
+                    >
+
+                    <div class="msg"></div>
+                  </div>
+                  <p></p>
+
+                  <p>
+                    <input
+                      class="button text-uppercase"
+                      type="submit"
+                      value="Create your Account"
+                    />
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-form js-tab-form active"
+            id="tab-forgot"
+            style="display: none;"
+          >
+            <div class="form">
+              <div class="box-section">
+                <div class="header">
+                  <h3><strong>Forgot your password</strong></h3>
+                </div>
+
+                <p>
+                  Enter your username or email address and we will send you a
+                  link to reset your password.
+                </p>
+
+                <form
+                  name="forgot_password"
+                  method="post"
+                  action="/forgot-password"
+                  class="forgot_password_form"
+                >
+                  <div class="form-group has-info">
+                    <p>
+                      <input
+                        type="text"
+                        id="forgot_password_usernameOrEmail"
+                        name="forgot_password[usernameOrEmail]"
+                        required="required"
+                        class="text-input"
+                        placeholder="Email or Username"
+                      />
+                      <span class="msg" style="display: inline;"></span>
+                    </p>
+
+                    <input
+                      type="hidden"
+                      id="forgot_password__token"
+                      name="forgot_password[_token]"
+                      value="jnNhslXX-FDjvbuPR2L2ZaCDnKzqFtRZjLaBU5iChdQ"
+                    />
+
+                    <p>
+                      <input
+                        type="submit"
+                        name="submit"
+                        value="FORGOT PASSWORD"
+                        class="button bold"
+                      />
+                    </p>
+
+                    <p align="center">
+                      <strong
+                        class="link-2 cursor-pointer js-tab-login"
+                        onclick="toggleForms(event)"
+                        >Back</strong
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
