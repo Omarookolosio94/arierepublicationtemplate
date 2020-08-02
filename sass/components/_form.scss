@@ -211,6 +211,11 @@ textarea.text-input {
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
+.box-form-fields .box-text-input + .box-text-input {
+  margin-top: 15px;
+}
+
 .box-input-file label *:not(svg) {
   display: block;
   float: left;

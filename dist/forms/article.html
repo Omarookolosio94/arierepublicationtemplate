@@ -21,9 +21,9 @@
             </div>
           </div>
           <ul class="navlinks">
-            <li class="dropdown has-mobile">
+            <li class="dropdown has-mobile" onclick="openProfile()">
               <span class="nav-item">okolosio-oghene</span>
-              <ul style="display: block;">
+              <ul id="open-profile">
                 <li><a href="../profile.html" class="nav-link">Profile</a></li>
                 <li><a href="profile.html" class="nav-link">Settings </a></li>
 
@@ -508,6 +508,54 @@
                         </div>
                       </div>
                     </li>
+
+                    <li>
+                      <div class="row left">
+                        <label><strong>Social Media Links</strong></label>
+                      </div>
+                      <div class="row right">
+                        <div class="box-text-input">
+                          <span class="size-medium">https://twitter.com/</span>
+                          <input
+                            type="text"
+                            id="user_settings_socialmedia_twitter"
+                            name="user_settings[socialmedia][twitter]"
+                            class="text-input"
+                          />
+                        </div>
+                        <div class="box-text-input">
+                          <span class="size-medium"
+                            >https://www.facebook.com/</span
+                          >
+                          <input
+                            type="text"
+                            id="user_settings_socialmedia_facebook"
+                            name="user_settings[socialmedia][facebook]"
+                            class="text-input"
+                          />
+                        </div>
+                        <div class="box-text-input">
+                          <span class="size-medium">https://linkedin.com/</span>
+                          <input
+                            type="text"
+                            id="user_settings_socialmedia_linkedin"
+                            name="user_settings[socialmedia][linkedin]"
+                            class="text-input"
+                          />
+                        </div>
+                        <div class="box-text-input">
+                          <span class="size-medium"
+                            >https://instagram.com/</span
+                          >
+                          <input
+                            type="text"
+                            id="user_settings_socialmedia_instagram"
+                            name="user_settings[socialmedia][instagram]"
+                            class="text-input"
+                          />
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
 
@@ -517,6 +565,13 @@
                     value="NEXT STEP 2/3"
                     class="button large bold width-full"
                   />
+                </p>
+                <p class="horizontal-center">
+                  <strong
+                    ><a href="#" class="link-2 js-remove-account"
+                      >Delete Account</a
+                    ></strong
+                  >
                 </p>
               </form>
             </div>
