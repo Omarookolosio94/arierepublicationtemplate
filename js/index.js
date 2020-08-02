@@ -1,5 +1,6 @@
 var sideNav = document.getElementById('sideNav');
 var registerForm = document.getElementById('tab-register-form');
+var open_profile = document.getElementById('open-profile');
 var LoginForm = document.getElementById('tab-login-form');
 var forgetForm = document.getElementById('tab-forgot');
 var content = document.getElementById('content');
@@ -38,6 +39,10 @@ openDropDown = (e) => {
   dropDown.classList.add('open');
 };
 
+openProfile = () => {
+  open_profile.style.display = 'block';
+};
+
 toggleInfo = (e) => {
   toggleHeading.classList.toggle('show');
 };
@@ -61,17 +66,14 @@ toggleForms = (evt) => {
     LoginForm.style.display = 'none';
     forgetForm.style.display = 'none ';
     registerForm.style.display = 'block';
-    console.log('register', registerForm);
   } else if (evt.target.classList.contains('js-tab-login')) {
     registerForm.style.display = 'none';
     forgetForm.style.display = 'none';
     LoginForm.style.display = 'block';
-    console.log('login', LoginForm);
   } else if (evt.target.classList.contains('js-forgot-password')) {
     LoginForm.style.display = 'none';
     registerForm.style.display = 'none';
     forgetForm.style.display = 'block';
-    console.log('forget', forgetForm);
   }
 };
 

@@ -2234,6 +2234,9 @@ textarea.text-input {
   color: #fff;
   transition: all 0.3s ease-in-out; }
 
+.box-form-fields .box-text-input + .box-text-input {
+  margin-top: 15px; }
+
 .box-input-file label *:not(svg) {
   display: block;
   float: left;
@@ -2453,10 +2456,17 @@ textarea.text-input {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 320px;
   height: 100vh;
   background-color: #f4f7f6;
-  transform: translateX(-320px); }
+  transform: translateX(-320px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  transition: background 0.3s ease-in-out;
+  z-index: 301; }
   .side-nav .header {
     height: 70px;
     padding: 0 30px;
