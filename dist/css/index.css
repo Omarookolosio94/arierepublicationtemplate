@@ -380,27 +380,24 @@ figure:after {
   .button:hover {
     color: #fff;
     background-color: #42ab9e; }
-
-.button.button-large {
-  height: 70px;
-  line-height: 71px; }
-
-.button.button-loadmore {
-  position: relative;
-  clear: both;
-  display: block;
-  width: 190px;
-  margin: 0 auto;
-  color: #bdc1c0;
-  background-color: #fcfcfc;
-  font-size: 17px;
-  font-weight: 400; }
+  .button.button-large {
+    height: 70px;
+    line-height: 71px; }
+  .button.button-loadmore {
+    position: relative;
+    clear: both;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    color: #bdc1c0;
+    background-color: #fcfcfc;
+    font-size: 17px;
+    font-weight: 400; }
+    .button.button-loadmore .txt-loading {
+      display: none; }
 
 .button.button-loadmore.style2 {
   margin-top: 15px; }
-
-.button.button-loadmore .txt-loading {
-  display: none; }
 
 .button.button-loadmore:hover {
   background: #fff;
@@ -453,12 +450,10 @@ figure:after {
 .bt-connect:hover {
   opacity: 0.75;
   color: #fff; }
-
-.bt-connect:hover .ico-svg {
-  fill: #fff; }
-
-.bt-connect:hover i {
-  color: #fff; }
+  .bt-connect:hover .ico-svg {
+    fill: #fff; }
+  .bt-connect:hover i {
+    color: #fff; }
 
 .bt-connect.bt-google:hover {
   color: #202121; }
@@ -846,7 +841,7 @@ figure:after {
   width: 34px;
   height: 34px;
   text-align: center;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -1491,7 +1486,7 @@ figure:after {
   padding: 0 23px;
   height: 34px;
   line-height: 34px;
-  color: white; }
+  color: #fff; }
 
 .box-profile .bt-default.small:hover {
   color: #49c5b6; }
@@ -1561,18 +1556,18 @@ figure:after {
     color: #202121;
     transition: all 0.3s ease-in-out; }
   .paginate .item.current {
-    background-color: #000;
+    background-color: #000000;
     color: #fff; }
   .paginate .item.more {
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     color: #fff; }
 
 .paginate .item:hover {
   background-color: #e6eaea; }
 
 .paginate .item.more:hover {
-  background-color: #000;
+  background-color: #000000;
   opacity: 0.75; }
 
 .page-headings {
@@ -2080,15 +2075,14 @@ figure:after {
     padding: 0 0 0 2px;
     text-align: left;
     font-size: 16px; }
-  .breadcrumb-submit li span {
-    display: block;
-    padding: 15px 0 0 40px;
-    border-top: 8px solid #202121;
-    color: #202121; }
-
-.breadcrumb-submit li.active a,
-.breadcrumb-submit li.active span {
-  font-weight: bold; }
+    .breadcrumb-submit li span {
+      display: block;
+      padding: 15px 0 0 40px;
+      border-top: 8px solid #202121;
+      color: #202121; }
+  .breadcrumb-submit li.active a,
+  .breadcrumb-submit li.active span {
+    font-weight: bold; }
 
 .box-form-fields {
   width: 100%;
@@ -2252,37 +2246,29 @@ textarea.text-input {
   display: flex;
   flex-wrap: wrap;
   border: none; }
-
-.box-input-file.style2 label {
-  overflow: initial; }
-
-.box-input-file.style2 .photo {
-  position: relative;
-  float: left;
-  width: 100px;
-  margin-right: 20px;
-  overflow: hidden; }
-
-.box-input-file.style2 .photo img {
-  float: left; }
-
-.box-input-file.style2 .photo strong {
-  height: 40px;
-  line-height: 40px; }
-
-.box-input-file.style2 label strong {
-  width: 100%; }
-
-.box-input-file.style2 .requirements {
-  margin-top: auto; }
-
-.box-input-file.style2 .requirements ul {
-  line-height: normal;
-  font-size: 14px;
-  color: #bdc1c0; }
-
-.box-input-file.style2 .requirements ul li {
-  padding: 1px 0; }
+  .box-input-file.style2 label {
+    overflow: initial; }
+  .box-input-file.style2 .photo {
+    position: relative;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    overflow: hidden; }
+  .box-input-file.style2 .photo img {
+    float: left; }
+  .box-input-file.style2 .photo strong {
+    height: 40px;
+    line-height: 40px; }
+  .box-input-file.style2 label strong {
+    width: 100%; }
+  .box-input-file.style2 .requirements {
+    margin-top: auto; }
+  .box-input-file.style2 .requirements ul {
+    line-height: normal;
+    font-size: 14px;
+    color: #bdc1c0; }
+  .box-input-file.style2 .requirements ul li {
+    padding: 1px 0; }
 
 .form-group.is-image-avatar .box-add-image {
   padding: 15px;
@@ -2293,7 +2279,7 @@ textarea.text-input {
   width: 100px;
   height: 100px; }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .breadcrumb-submit li a,
   .breadcrumb-submit li span {
     padding-left: 0; } }
@@ -3166,7 +3152,7 @@ body.hidden-y {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #000000;
     z-index: 0; }
   .box-site-head .box-bg a {
     position: relative;
@@ -3477,7 +3463,7 @@ body.hidden-y {
     width: 520px;
     max-width: 100%; }
   #footer a {
-    color: #202121; }
+    color: #4a5c5c; }
   #footer p:last-child {
     margin-bottom: 0; }
   #footer .follow a {

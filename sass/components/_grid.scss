@@ -51,7 +51,7 @@
     line-height: 25px;
 
     a {
-      color: #202121;
+      color: $secondaryBg;
     }
   }
 
@@ -97,7 +97,7 @@
 .list-items .box-info {
   position: relative;
   clear: both;
-  background-color: #fcfcfc;
+  background-color: $lightColor;
 }
 
 .list-flex .box-item,
@@ -203,7 +203,7 @@
   width: calc(100% - 40px);
   height: 1px;
   padding: 0 20px;
-  background: #f4f7f6;
+  background: $primaryBg;
 }
 
 .list-items .box-info .footer .box-left {
@@ -243,8 +243,8 @@
     height: 50px;
     padding-top: 10px;
     text-align: center;
-    color: #202121;
-    border: 1px solid #e6eaea;
+    color: $secondaryBg;
+    border: 1px solid $borderBtm;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
     cursor: default;
@@ -267,11 +267,11 @@
 }
 
 .list-number-awards .box-item.style-dark {
-  border-color: #202121;
+  border-color: $secondaryBg;
 }
 
 .list-number-awards .box-item.box-usertype {
-  color: #202121;
+  color: $secondaryBg;
   cursor: pointer;
 }
 
@@ -288,8 +288,8 @@
   height: 34px;
   padding: 0 20px;
   line-height: 34px;
-  color: #202121;
-  border: 1px solid #202121;
+  color: $secondaryBg;
+  border: 1px solid $secondaryBg;
   border-radius: 36px;
   overflow: hidden;
   z-index: 1;
@@ -318,45 +318,45 @@
 .list-tags li.hm .item,
 .list-tags li.hm .item:hover,
 .list-tags li.hm .tooltip-text {
-  background-color: #9fd2d6;
-  color: #fff;
+  background-color: $hmText;
+  color: $plainWhite;
 }
 
 .list-tags li.sotd .tooltip-text:after {
-  border-top-color: #ff4e4e;
+  border-top-color: $tooltipBorder;
 }
 
 .list-tags li.sotd .item,
 .list-tags li.sotd .item:hover,
 .list-tags li.sotd .tooltip-text {
-  background-color: #ff4e4e;
-  color: #fff;
+  background-color: $tooltipBorder;
+  color: $plainWhite;
 }
 
 .list-tags li.sotd .tooltip-text:after {
-  border-top-color: #ff4e4e;
+  border-top-color: $tooltipBorder;
 }
 
 .list-tags li.dotd .item,
 .list-tags li.dotd .item:hover,
 .list-tags li.dotd .tooltip-text {
-  background-color: #8154ef;
-  color: #fff;
+  background-color: $dotdText;
+  color: $plainWhite;
 }
 
 .list-tags li.dotd .tooltip-text:after {
-  border-top-color: #8154ef;
+  border-top-color: $dotdText;
 }
 
 .list-tags li.motw .item,
 .list-tags li.motw .item:hover,
 .list-tags li.motw .tooltip-text {
-  background-color: #ff8601;
-  color: #fff;
+  background-color: $motwText;
+  color: $plainWhite;
 }
 
 .list-tags li.motw .tooltip-text:after {
-  border-top-color: #ff8601;
+  border-top-color: $motwText;
 }
 
 .list-items .box-info .list-tags .item {
@@ -372,7 +372,7 @@
 }
 
 .list-tags li.hm .tooltip-text:after {
-  border-top-color: #9fd2d6;
+  border-top-color: $hmText;
 }
 
 .list-items .box-style8 .title {

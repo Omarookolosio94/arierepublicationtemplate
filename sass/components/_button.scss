@@ -5,7 +5,7 @@
   height: 60px;
   padding: 0 35px;
   background-color: $lightGreen;
-  color: #fff;
+  color: $plainWhite;
   line-height: 63px;
   text-align: center;
   font-size: 13px;
@@ -21,38 +21,38 @@
   }
 
   &:hover {
-    color: #fff;
+    color: $plainWhite;
     background-color: $darkgreen;
   }
-}
 
-.button.button-large {
-  height: 70px;
-  line-height: 71px;
-}
+  &.button-large {
+    height: 70px;
+    line-height: 71px;
+  }
+  &.button-loadmore {
+    position: relative;
+    clear: both;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    color: $lightHover;
+    background-color: $lightColor;
+    font-size: 17px;
+    font-weight: 400;
 
-.button.button-loadmore {
-  position: relative;
-  clear: both;
-  display: block;
-  width: 190px;
-  margin: 0 auto;
-  color: #bdc1c0;
-  background-color: #fcfcfc;
-  font-size: 17px;
-  font-weight: 400;
+    .txt-loading {
+      display: none;
+    }
+  }
 }
 
 .button.button-loadmore.style2 {
   margin-top: 15px;
 }
-.button.button-loadmore .txt-loading {
-  display: none;
-}
 
 .button.button-loadmore:hover {
-  background: #fff;
-  color: #a6abab;
+  background: $plainWhite;
+  color: $gray;
 }
 
 .bt-connect {
@@ -65,9 +65,9 @@
   line-height: 50px;
   font-size: 15px;
   font-weight: 500;
-  background-color: #bdc1c0;
+  background-color: $lightHover;
   text-align: left;
-  color: #fff;
+  color: $plainWhite;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -83,16 +83,16 @@
     transform: translateY(-50%);
   }
   i {
-    color: #fff;
+    color: $plainWhite;
   }
   .ico-svg {
-    fill: #fff;
+    fill: $plainWhite;
   }
 }
 
 .bt-connect.bt-google {
-  background-color: #fcfcfc;
-  color: #202121;
+  background-color: $lightColor;
+  color: $secondaryBg;
   font-weight: 600;
 
   .ico-svg {
@@ -102,24 +102,24 @@
 }
 
 .bt-connect.bt-twitter {
-  background-color: #25b6e6;
+  background-color: $twitter;
 }
 
 .bt-connect.bt-facebook {
-  background-color: #325595;
+  background-color: $facebook;
 }
 
 .bt-connect:hover {
   opacity: 0.75;
-  color: #fff;
-}
+  color: $plainWhite;
 
-.bt-connect:hover .ico-svg {
-  fill: #fff;
-}
+  .ico-svg {
+    fill: $plainWhite;
+  }
 
-.bt-connect:hover i {
-  color: #fff;
+  i {
+    color: $plainWhite;
+  }
 }
 
 .bt-connect.bt-google:hover {

@@ -1,6 +1,6 @@
 #footer {
   position: relative;
-  background-color: #fcfcfc;
+  background-color: $lightColor;
   z-index: -1;
 
   .box-top {
@@ -26,7 +26,7 @@
     max-width: 100%;
   }
   a {
-    color: #202121;
+    color: $linkText;
   }
   p:last-child {
     margin-bottom: 0;
@@ -56,7 +56,7 @@
   .box-bottom {
     clear: both;
     padding-top: 25px;
-    border-top: 1px solid #e6eaea;
+    border-top: 1px solid $borderBtm;
   }
 }
 
@@ -97,10 +97,10 @@
 }
 
 .menu-footer > li.jobs a[data-count]:after {
-  background-color: #9ceade;
+  background-color: $jobs;
 }
 .menu-footer > li.directory a[data-count]:after {
-  background-color: #fef7c1;
+  background-color: $directory;
 }
 
 .box-select-lang {
@@ -143,8 +143,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f4f7f6;
-    border-bottom: 1px solid #dbe0df;
+    background-color: $primaryBg;
+    border-bottom: 1px solid $inputBorder;
     font-size: 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -154,7 +154,7 @@
   }
 
   li:hover {
-    background-color: #e6eaea;
+    background-color: $borderBtm;
   }
 
   li:last-child {

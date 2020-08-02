@@ -126,14 +126,14 @@
 .side-nav .navlinks .dropdown:before {
   top: 27px;
   height: 8px;
-  border-top: 3px solid #dbe0df;
-  border-bottom: 3px solid #dbe0df;
+  border-top: 3px solid $inputBorder;
+  border-bottom: 3px solid $inputBorder;
 }
 
 .side-nav .navlinks .dropdown:after {
   top: 37px;
   height: 3px;
-  border-top: 3px solid #dbe0df;
+  border-top: 3px solid $inputBorder;
 }
 
 .side-nav .badget {

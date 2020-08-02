@@ -21,7 +21,7 @@
   display: inline-block;
   width: auto;
   height: 14px;
-  fill: #202121;
+  fill: $secondaryBg;
   transform: translate(0, 0);
   transition: all 0.3s ease-in-out;
 }
@@ -35,7 +35,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border-color: #202121;
+    border-color: $secondaryBg;
   }
 }
 
@@ -130,7 +130,7 @@
 
   circle {
     fill: none;
-    stroke: #fff;
+    stroke: $plainWhite;
     stroke-width: 3;
   }
 
@@ -179,22 +179,22 @@
 }
 
 .circle-note-progress.style-design circle {
-  stroke: #df6c4f;
+  stroke: $design;
 }
 
 .circle-note-progress.style-usability circle {
-  stroke: #ecd06f;
+  stroke: $usability;
 }
 
 .circle-note-progress.style-creativity circle {
-  stroke: #3c948b;
+  stroke: $creativity;
 }
 .circle-note-progress.style-content circle {
-  stroke: #1a99aa;
+  stroke: $content;
 }
 
 .circle-note-progress.style-mobile circle {
-  stroke: #00fca3;
+  stroke: $mobile;
 }
 
 .circle-note-progress .box-circle .legend,
@@ -206,7 +206,7 @@
   stroke-opacity: 0.3;
 }
 .circle-note-progress.style-developer circle {
-  stroke: #00fca3;
+  stroke: $mobile;
 }
 
 // ToolTip
@@ -227,11 +227,11 @@
   }
 
   .tooltip-text[data-color='green-2'] {
-    background-color: #00fca3;
-    color: #202121;
+    background-color: $mobile;
+    color: $secondaryBg;
 
     &:after {
-      border-top-color: #00fca3;
+      border-top-color: $mobile;
     }
   }
 
@@ -241,9 +241,9 @@
     left: -50%;
     width: auto;
     padding: 8px 16px;
-    background-color: #49c5b6;
+    background-color: $lightGreen;
     white-space: nowrap;
-    color: #fff;
+    color: $plainWhite;
     font-size: 14px;
     line-height: normal;
     text-align: center;
@@ -259,7 +259,7 @@
       width: 0;
       margin-left: -6px;
       border: solid transparent;
-      border-top-color: #49c5b6;
+      border-top-color: $lightGreen;
       border-width: 8px 6px;
     }
   }
@@ -292,7 +292,7 @@
   }
 
   a {
-    color: #202121;
+    color: $secondaryBg;
   }
 
   &:after {
@@ -303,8 +303,8 @@
 }
 
 .box-breadcrumb .bt-default {
-  color: #202121;
-  border-color: #202121;
+  color: $secondaryBg;
+  border-color: $secondaryBg;
   font-weight: 500;
 }
 
@@ -319,7 +319,7 @@
 .box-block {
   margin-bottom: 1px;
   padding: 35px;
-  background-color: #fcfcfc;
+  background-color: $lightColor;
 }
 
 .box-block {
@@ -356,14 +356,14 @@
 }
 
 .list-share-circles.light .bt-circle {
-  border-color: #fcfcfc;
+  border-color: $lightColor;
 
   .ico-svg {
-    fill: #fcfcfc;
+    fill: $lightColor;
   }
 
   &:hover {
-    border-color: #49c5b6;
+    border-color: $lightGreen;
     // border-color: transparent;
   }
 }
@@ -419,7 +419,7 @@
   width: 34px;
   height: 34px;
   text-align: center;
-  border: 1px solid #000;
+  border: 1px solid $plainBlack;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -431,7 +431,7 @@
   }
 
   &:hover {
-    border-color: #49c5b6;
+    border-color: $lightGreen;
 
     i {
       color: $darkgreen !important;
@@ -443,12 +443,6 @@
   width: 40px;
   height: 40px;
 }
-
-// .bt-circle.bt-share i {
-//   height: 13px;
-//   top: -1px;
-//   left: -1px;
-// }
 
 .bt-circle.bt-twitter i {
   height: 12px;
@@ -477,7 +471,7 @@
   transition: all 0.3s ease-in-out;
 }
 .bt-like .circle {
-  stroke: #bdc1c0;
+  stroke: $lightHover;
 }
 
 .bt-like .ico-svg {
@@ -486,7 +480,7 @@
   transform: translateZ(0);
 }
 .bt-like .ico-svg {
-  fill: #bdc1c0;
+  fill: $lightHover;
 }
 
 .bt-like .number {
@@ -513,8 +507,8 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  color: #a6abab;
-  border-color: #dbe0df;
+  color: $gray;
+  border-color: $inputBorder;
 
   .number {
     margin: 0 4px 0 2px;
@@ -528,9 +522,9 @@
 }
 
 .bt-default.green-fill {
-  border-color: #49c5b6;
-  color: #fff;
-  background-color: #49c5b6;
+  border-color: $lightGreen;
+  color: $plainWhite;
+  background-color: $lightGreen;
   font-weight: 500;
 
   &:hover {
@@ -538,12 +532,12 @@
   }
 }
 .bt-default.white {
-  color: #fcfcfc;
-  border-color: #fcfcfc;
+  color: $lightColor;
+  border-color: $lightColor;
 }
 .bt-default.black {
-  color: #202121;
-  border-color: #202121;
+  color: $secondaryBg;
+  border-color: $secondaryBg;
   font-weight: 500;
 }
 
@@ -569,7 +563,7 @@
     position: absolute;
     top: -2px;
     left: -18px;
-    fill: #fcfcfc;
+    fill: $lightColor;
     transition: all 0.3s ease-in-out;
   }
 
@@ -603,7 +597,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    border-bottom: 1px solid #fcfcfc;
+    border-bottom: 1px solid $lightColor;
     transition: all 0.3s;
   }
 
@@ -615,7 +609,7 @@
     right: 0;
     width: 34px;
     height: 100%;
-    border: 1px solid #fcfcfc;
+    border: 1px solid $lightColor;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
   }
@@ -623,15 +617,15 @@
   &:hover .corner:after,
   &:hover .borders:before,
   &:hover .borders:after {
-    border-color: #49c5b6;
+    border-color: $lightGreen;
   }
   &:hover svg {
-    fill: #49c5b6;
+    fill: $lightGreen;
   }
 }
 
 .bt-default.bt-laurel.black svg {
-  fill: #202121;
+  fill: $secondaryBg;
 }
 
 .bt-default.bt-laurel.medium svg {
@@ -649,22 +643,22 @@
 .bt-default.bt-laurel.black .borders:before,
 .bt-default.bt-laurel.black .borders:after,
 .bt-default.bt-laurel.black .corner:after {
-  border-color: #202121;
+  border-color: $secondaryBg;
 }
 
 .bt-default.bt-laurel:hover .corner:after,
 .bt-default.bt-laurel:hover .borders:before,
 .bt-default.bt-laurel:hover .borders:after {
-  border-color: #49c5b6;
+  border-color: $lightGreen;
 }
 
 .bt-default.bt-laurel:hover svg {
-  fill: #49c5b6;
+  fill: $lightGreen;
 }
 
 .bt-default:hover {
-  color: #49c5b6;
-  border-color: #49c5b6;
+  color: $lightGreen;
+  border-color: $lightGreen;
 }
 
 .box-users-likes {
@@ -708,11 +702,11 @@
   width: 190px;
   min-height: 239px;
   padding: 35px 30px;
-  background-color: #fcfcfc;
+  background-color: $lightColor;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-size: 14px;
-  color: #202121;
+  color: $secondaryBg;
   transform: translate(-50%, -10px);
   transition: all 0.3s ease-in-out;
   z-index: 200;
@@ -759,7 +753,7 @@
     width: 0;
     margin-left: -6px;
     border: solid transparent;
-    border-top-color: #fcfcfc;
+    border-top-color: $lightColor;
     border-width: 8px 6px;
     pointer-events: none;
   }
@@ -776,12 +770,12 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #fcfcfc;
+    background-color: $lightColor;
     text-align: center;
   }
 
   i {
-    color: #a6abab;
+    color: $gray;
     margin-top: 5px;
   }
 
@@ -799,7 +793,7 @@
 .list-stats-icons {
   text-align: center;
   font-weight: bold;
-  color: #a6abab;
+  color: $gray;
 
   li {
     display: inline-block;
@@ -815,12 +809,12 @@
 }
 
 .block-head-profile.style-gray {
-  background-color: #707070;
-  color: #fff;
+  background-color: $toggleBg;
+  color: $plainWhite;
 }
 
 .block.border-bottom {
-  border-bottom: 1px solid #e6eaea;
+  border-bottom: 1px solid $borderBtm;
 }
 
 .block.p-0 {
@@ -867,7 +861,7 @@
   }
 
   .list-datas a {
-    color: #202121;
+    color: $secondaryBg;
   }
 }
 
@@ -902,7 +896,7 @@
 
 .rollover {
   display: block;
-  background: #e6eaea;
+  background: $borderBtm;
   transition: all 0.3s ease-in-out;
 
   .box-photo {
@@ -950,7 +944,7 @@
     transition: all 0.3s ease-in-out;
 
     i {
-      color: #fff;
+      color: $plainWhite;
     }
   }
 
@@ -998,13 +992,13 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 12px;
     font-weight: 500;
-    color: #fff;
+    color: $plainWhite;
     letter-spacing: 1px;
     line-height: 32px;
   }
 
   .bt-item .ico-svg {
-    fill: #fff;
+    fill: $plainWhite;
     height: 13px;
   }
 }
@@ -1018,7 +1012,7 @@
   width: 100%;
   padding: 0 20px;
   text-align: center;
-  color: #fff;
+  color: $plainWhite;
   transform: translateY(-50%);
 }
 
@@ -1045,7 +1039,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: #202121;
+  background: $secondaryBg;
   opacity: 0;
   z-index: 0;
   transition: all 0.3s ease-in-out;
@@ -1084,7 +1078,7 @@
 .box-dropdown .option-active {
   position: relative;
   padding-right: 20px;
-  color: #49c5b6;
+  color: $lightGreen;
   cursor: pointer;
 }
 .box-dropdown .option-active:before {
@@ -1096,7 +1090,7 @@
   width: 8px;
   height: 8px;
   margin-top: -4px;
-  border: 3px solid #49c5b6;
+  border: 3px solid $lightGreen;
   border-bottom: none;
   border-left: none;
   -webkit-transform: rotate(135deg);
@@ -1117,7 +1111,7 @@
   width: 100%;
   min-width: 200px;
   height: auto;
-  color: #202121;
+  color: $secondaryBg;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
   z-index: 99;
   -webkit-transform: translateY(-50%) scale(0.2);
@@ -1133,7 +1127,7 @@
 }
 
 .box-dropdown .options li {
-  background-color: #f4f7f6;
+  background-color: $primaryBg;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -1141,14 +1135,14 @@
 }
 
 .box-dropdown .options li:hover {
-  background-color: #e6eaea;
+  background-color: $borderBtm;
 }
 
 .box-dropdown .options .item-option {
   position: relative;
   display: block;
   padding: 10px 20px;
-  color: #202121;
+  color: $secondaryBg;
 }
 
 .box-users-likes {
@@ -1256,11 +1250,11 @@
   padding: 0 23px;
   height: 34px;
   line-height: 34px;
-  color: white;
+  color: $plainWhite;
 }
 
 .box-profile .bt-default.small:hover {
-  color: #49c5b6;
+  color: $lightGreen;
 }
 .box-profile div.item > a > img {
   width: 34px;
@@ -1332,27 +1326,27 @@
     margin-right: 1px;
     line-height: 60px;
     text-align: center;
-    background-color: #fff;
-    color: #202121;
+    background-color: $plainWhite;
+    color: $secondaryBg;
     transition: all 0.3s ease-in-out;
   }
 
   .item.current {
-    background-color: #000;
-    color: #fff;
+    background-color: $plainBlack;
+    color: $plainWhite;
   }
   .item.more {
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: $plainBlack;
+    color: $plainWhite;
   }
 }
 
 .paginate .item:hover {
-  background-color: #e6eaea;
+  background-color: $borderBtm;
 }
 .paginate .item.more:hover {
-  background-color: #000;
+  background-color: $plainBlack;
   opacity: 0.75;
 }
 
@@ -1366,7 +1360,7 @@
     width: 80px;
     height: 4px;
     margin-bottom: 30px;
-    background-color: #202121;
+    background-color: $secondaryBg;
     border: none;
   }
   p:last-child {

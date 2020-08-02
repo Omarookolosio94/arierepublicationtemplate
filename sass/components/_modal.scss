@@ -1,6 +1,6 @@
 .link-2 {
   display: inline-block;
-  color: #49c5b6 !important;
+  color: $lightGreen !important;
   border-bottom: 1px solid rgba(73, 197, 182, 0.5);
   line-height: normal;
   cursor: pointer;
@@ -32,7 +32,7 @@
     right: 0;
     width: 66px;
     height: 70px;
-    background-color: #fcfcfc;
+    background-color: $lightColor;
     cursor: pointer;
     z-index: 1;
     transition: all 0.3s ease-in-out;
@@ -47,7 +47,7 @@
     left: 50%;
     width: 20px;
     height: 2px;
-    background-color: #202121;
+    background-color: $secondaryBg;
   }
 
   .bt-close:before {
@@ -62,7 +62,7 @@
     display: inline-block;
     max-width: 100%;
     padding: 50px;
-    background-color: #f4f7f6;
+    background-color: $primaryBg;
     transform: translateY(30px);
     transition: all 0.3s;
     margin: auto 0;
@@ -136,7 +136,7 @@
 
 .box-login .form .check {
   text-align: left;
-  color: #a6abab;
+  color: $gray;
   line-height: 21px;
 
   input {
@@ -166,7 +166,7 @@
     padding: 0;
 
     .bt-close {
-      background-color: #f4f7f6;
+      background-color: $primaryBg;
     }
 
     [class*='box-content-'] {
